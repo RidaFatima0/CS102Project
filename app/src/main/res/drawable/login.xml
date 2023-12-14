@@ -1,0 +1,9 @@
+<!-- Auto layout, variables, and unit scale are not yet supported -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginpage"
+    android:layout_width="385dp"
+    android:layout_height="800dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF"
+    >

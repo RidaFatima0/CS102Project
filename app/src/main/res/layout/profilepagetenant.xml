@@ -1,0 +1,303 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingscre"
+    android:layout_width="411dp"
+    android:layout_height="740dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_1_shape" />
+
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="applogo"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="40dp"
+            android:text="Your Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="0dp">
+
+        <View
+            android:id="@+id/rectangle1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="131dp"
+            android:background="@drawable/rectangle_9_shape"
+            />
+
+        <ImageView android:id="@+id/profilepic"
+            android:src="@drawable/image_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <TextView android:id="@+id/mustafa_yildirim"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="279dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mustafa_yildirim_string"
+            />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="179dp"
+            android:layout_marginTop="305dp"
+            android:textSize="18dp"
+            android:text="Edit"
+            android:textAppearance="Edit"
+            android:gravity="top"
+            />
+
+        <!--        <View-->
+        <!--            android:id="@+id/editlogo"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="330dp"-->
+        <!--            android:src="@drawable/edit"-->
+        <!--            android:tint="@color/black" />-->
+
+        <ImageView android:id="@+id/line"
+            android:src="@drawable/line_1"
+            android:contentDescription="line_1"
+            android:layout_marginTop="345dp"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="352dp"
+            android:textSize="18dp"
+            android:text="From:                     Ankara"/>
+
+        <!--        <View-->
+        <!--            android:id="@+id/editlogo"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginTop="330dp"-->
+        <!--            android:layout_marginStart="30dp"-->
+        <!--            android:src="@drawable/usermale"-->
+        <!--            android:tint="@color/black" />-->
+
+        <TextView
+            android:id="@+id/membersince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="380dp"
+            android:textSize="18dp"
+            android:text="Member Since:      2021"/>
+
+
+        <!--        <View-->
+        <!--            android:id="@+id/editlogo"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginTop="330dp"-->
+        <!--            android:layout_marginStart="30dp"-->
+        <!--            android:src="@drawable/usermale"-->
+        <!--            android:tint="@color/black" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView android:id="@+id/line2"
+            android:src="@drawable/line_1"
+            android:contentDescription="line_1"
+            android:layout_marginTop="445dp"
+            android:layout_width="700dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="1dp"/>
+
+
+        <View
+            android:id="@+id/rectangle"
+            android:layout_width="205dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="1.07dp"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/rectangle_9_shape"
+            />
+
+        <TextView
+            android:id="@+id/yourListings"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="453dp"
+            android:text="Your Listings"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/rectangle2"
+            android:layout_width="187dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/rectangle_9_shape"
+            android:backgroundTint="@color/rectangle_1_color"
+            />
+
+        <TextView
+            android:id="@+id/rented"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="453dp"
+            android:text="Rented"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/efficiency_elements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp">
+
+            <View
+                android:id="@+id/rectangle3"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="358dp"
+                android:background="@drawable/Rectangle2" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="111.25dp"
+                android:layout_height="84.02dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="375.62dp"
+                android:background="@drawable/image11"
+                />
+
+            <View
+                android:id="@+id/star10"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="117dp"
+                android:layout_marginTop="438dp"
+                android:background="@drawable/Star"
+                />
+
+            <View
+                android:id="@+id/star11"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="103dp"
+                android:layout_marginTop="438dp"
+                android:background="@drawable/Star"
+                />
+
+            <View
+                android:id="@+id/star12"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="438dp"
+                android:background="@drawable/Star"
+                />
+
+            <View
+                android:id="@+id/star13"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="438dp"
+                android:background="@drawable/Star"
+                />
+
+            <TextView
+                android:id="@+id/listing1"
+                android:layout_width="86dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="465dp"
+                android:text="Ankara/Ayas" />
+
+            <TextView
+                android:id="@+id/listing1price"
+                android:layout_width="150dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="485dp"
+                android:text="16300TL/month"
+                android:textColor="@color/_16_300_tl_year_color"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/payRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="515dp"
+                android:textSize="15dp"
+                android:text="Pay Rent"
+                android:textAppearance="Pay Rent"/>
+        </RelativeLayout>
+
+
+</RelativeLayout>

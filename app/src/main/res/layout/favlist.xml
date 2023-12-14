@@ -1,0 +1,217 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingscre"
+    android:layout_width="393dp"
+    android:layout_height="800dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout android:id="@+id/navbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_1_shape" />
+
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="applogo"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="40dp"
+            android:text="Saved"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/efficiency_elements1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/rectangle1"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="138dp"
+            android:background="@drawable/Rectangle2" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="111.25dp"
+            android:layout_height="84.02dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="155.62dp"
+            android:background="@drawable/image11"
+            />
+
+        <ImageView
+            android:id="@+id/bookmark1"
+            android:layout_width="18dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="149dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/Bookmarkfilled" />
+
+        <View
+            android:id="@+id/star10"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="218dp"
+            android:background="@drawable/Star"
+            />
+
+        <View
+            android:id="@+id/star11"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginTop="218dp"
+            android:background="@drawable/Star"
+            />
+
+        <View
+            android:id="@+id/star12"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="218dp"
+            android:background="@drawable/Star"
+            />
+
+        <View
+            android:id="@+id/star13"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="218dp"
+            android:background="@drawable/Star"
+            />
+
+        <TextView
+            android:id="@+id/listing1"
+            android:layout_width="86dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="245dp"
+            android:text="Ankara/Ayas" />
+
+        <TextView
+            android:id="@+id/listing1price"
+            android:layout_width="150dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="265dp"
+            android:text="16300TL/month"
+            android:textColor="@color/_16_300_tl_year_color"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/rectangle2"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="138dp"
+            android:background="@drawable/Rectangle2"/>
+
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="111.25dp"
+            android:layout_height="84.02dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="155dp"
+            android:background="@drawable/image6"/>
+
+        <ImageView
+            android:id="@+id/bookmark2"
+            android:layout_width="18dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="329dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginBottom="342dp"
+            android:background="@drawable/Bookmarkfilled" />
+
+        <View
+            android:id="@+id/star20"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="218dp"
+            android:background="@drawable/Star"
+            />
+
+        <View
+            android:id="@+id/star21"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="218dp"
+            android:background="@drawable/Star"
+            />
+
+        <TextView
+            android:id="@+id/listing2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="245dp"
+            android:gravity="center_horizontal|top"
+            android:text="Konya/Meram" />
+
+        <TextView
+            android:id="@+id/listing2price"
+            android:layout_width="150dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="265dp"
+            android:text="7500TL/month"
+            android:textColor="@color/_16_300_tl_year_color"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+

@@ -1,0 +1,156 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingscre"
+    android:layout_width="393dp"
+    android:layout_height="800dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout android:id="@+id/navbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_1_shape" />
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="applogo"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Notifications"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20dp"
+            android:text="Today"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/notification1"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="164dp"
+            android:background="#EFCBCB"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:text="◾ @kayazeynep wants to contact with you..."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timestamp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:layout_marginStart="330dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="23 min" />
+
+        <EditText
+            android:id="@+id/notification2"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="212dp"
+            android:background="#EFCBCB"
+            android:ems="10"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:text="◾The land from your favorites has been rented..."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timestamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="212dp"
+            android:layout_marginStart="350dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="2 hr" />
+
+        <EditText
+            android:id="@+id/notification3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="260dp"
+            android:background="#CBEFCD"
+            android:ems="10"
+            android:inputType="text"
+            android:text="◾Montly payment has been made for the l..."
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/timestamp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="259dp"
+            android:layout_marginStart="350dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="8 hr" />
+
+        <TextView
+            android:id="@+id/yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:layout_marginStart="15dp"
+            android:text="Yesterday"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/notification4"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="376dp"
+            android:background="#CBEFCD"
+            android:ems="10"
+            android:inputType="text"
+            android:text="◾7 days left until your rent payment for la..."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timestamp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="376dp"
+            android:layout_marginStart="340dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="1 day" />
+
+    </RelativeLayout>
+</RelativeLayout>
