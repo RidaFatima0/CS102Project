@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- specificlistingpage strings -->
+    <!-- specificlistingpage strings -->
 
-	<string name="app_name">Page 1</string>
-	<string name="ek_img_content">ExportKit Image</string>
-	<string name="a_green_deal_string">A Green Deal</string>
-	<string name="search_string">Search</string>
-	<string name="_16_300_tl_year_string">16.300 TL/Year</string>
-	<string name="ankara_string"> Ankara</string>
-	<string name="land_usage_condition__agriculture_string">Land Usage Condition: Agriculture</string>
-	<string name="financial_calculation__determine_whether_you_can_afford_this_land__string">Financial Calculation: Determine whether you can afford this land.</string>
-	<string name="description__tenant_must_utilize_the_land_for_agriculture_purpose___see_more____string">Description: Tenant must utilize the land for agriculture purpose...See more...</string>
-	<string name="search_ek1_string">search</string>
-	<string name="mustafa_yildirim_string">Mustafa Yildirim</string>
-	<string name="request_seller_contact_string">Request Seller Contact</string>
-	<string name="calculate_string">Calculate</string>
-	<string name="rent_string">Rent</string>
-	<string name="monthly_income_string">Monthly Income</string>
+    <string name="app_name">Page 1</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="a_green_deal_string">A Green Deal</string>
+    <string name="search_string">Search</string>
+    <string name="_16_300_tl_year_string">16.300 TL/Year</string>
+    <string name="ankara_string"> Ankara</string>
+    <string name="land_usage_condition__agriculture_string">Land Usage Condition: Agriculture</string>
+    <string name="financial_calculation__determine_whether_you_can_afford_this_land__string">Financial Calculation: Determine whether you can afford this land.</string>
+    <string name="description__tenant_must_utilize_the_land_for_agriculture_purpose___see_more____string">Description: Tenant must utilize the land for agriculture purpose...See more...</string>
+    <string name="search_ek1_string">search</string>
+    <string name="mustafa_yildirim_string">Mustafa Yildirim</string>
+    <string name="request_seller_contact_string">Request Seller Contact</string>
+    <string name="calculate_string">Calculate</string>
+    <string name="rent_string">Rent</string>
+    <string name="monthly_income_string">Monthly Income</string>
 </resources>

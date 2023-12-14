@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         >
 
+
         <View
             android:id="@+id/rectangle_1"
             android:layout_width="match_parent"
@@ -34,44 +35,37 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="281dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_marginStart="110dp"
             android:layout_marginTop="40dp"
-            android:text="Edit Profile"
+            android:text="A GREEN DEAL"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
 
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_marginTop="35dp"
-        android:layout_marginStart="0dp"
-        android:layout_width="400dp"
-        android:layout_height="800dp"
-        >
-
-        <ImageView android:id="@+id/profilepic"
-            android:src="@drawable/image_3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="110dp"
-            android:layout_width="140dp"
-            android:layout_height="140dp" />
-
-        <TextView
-            android:id="@+id/edit"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dp"
-            android:textSize="18dp"
-            android:text="Edit Profile Picture"
-            android:textAppearance="Edit"
-            android:gravity="top"
-            />
+            android:layout_marginTop="149dp"
+            android:text="Create Account"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
 
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:text="Please input your details here"
+        android:textColor="#808080"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -168,7 +162,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="590dp"
-        android:src="@drawable/Lock"
+        android:src="@drawable/lock"
         />
 
     <Button
@@ -179,7 +173,7 @@
         android:layout_marginStart="135dp"
         android:layout_marginTop="650dp"
         android:background="@drawable/rbutton"
-        android:text="Save"
+        android:text="SIGN UP"
         android:textColor="#FFFFFF" />
 
     <ImageView
@@ -190,7 +184,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="531dp"
-        android:src="@drawable/Lock"/>
+        android:src="@drawable/lock"/>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -236,7 +230,5 @@
         android:layout_marginTop="301dp"
         android:src="@android:drawable/ic_menu_my_calendar"
         android:tint="@color/black" />
-
-    </RelativeLayout>
 
 </RelativeLayout>

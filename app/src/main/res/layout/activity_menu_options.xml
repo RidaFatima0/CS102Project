@@ -67,6 +67,42 @@
                         android:contentDescription="applogo"
                         android:src="@drawable/applogo" />
 
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="36.31dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="330dp"
+                        android:layout_marginTop="46dp"
+                        android:contentDescription="vector"
+                        android:src="@drawable/vector" />
+
+                    <ImageView
+                        android:id="@+id/profile2"
+                        android:layout_width="28.75dp"
+                        android:layout_height="7.7dp"
+                        android:layout_marginStart="334dp"
+                        android:layout_marginTop="63dp"
+                        android:contentDescription="vector_ek1"
+                        android:src="@drawable/vector_ek1" />
+
+                    <ImageView
+                        android:id="@+id/profile3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="342dp"
+                        android:layout_marginTop="50dp"
+                        android:contentDescription="vector_ek2"
+                        android:src="@drawable/vector_ek2" />
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="25.67dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="300dp"
+                        android:layout_marginTop="52dp"
+                        android:contentDescription="vector_ek11"
+                        android:src="@drawable/vector_ek11" />
+
                     <EditText
                         android:id="@+id/search"
                         android:layout_width="wrap_content"
@@ -88,19 +124,7 @@
                         android:contentDescription="vector_ek12"
                         android:src="@drawable/vector_ek12" />
 
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="280dp"
-                        android:layout_marginTop="50dp"
-                        android:textSize="16dp"
-                        android:text="Login/Signup"/>
-
-
                 </RelativeLayout>
-
 
                 <RelativeLayout android:id="@+id/photo_group"
                     android:layout_marginTop="129dp"
@@ -191,6 +215,104 @@
 
                 </RelativeLayout>
 
+                <RelativeLayout android:id="@+id/menuOptions"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+                        android:id="@+id/menu"
+                        android:layout_width="139dp"
+                        android:layout_height="248dp"
+                        android:layout_marginLeft="255dp"
+                        android:layout_marginTop="100dp"
+                        android:background="#E6ACBC98"
+                        />
+
+                    <TextView
+                        android:id="@+id/homemenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Home"
+                        android:textAppearance="Home"
+                        android:textSize="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/homeicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="265dp"
+                        android:layout_marginTop="140dp"
+                        android:src="@drawable/home"
+                        android:tint="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/profilemenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Profile"
+                        android:textAppearance="Profile"
+                        android:textSize="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/profileicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="177dp"
+                        android:src="@drawable/acc"
+                        android:tint="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/favmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="230dp"
+                        android:text="Saved"
+                        android:textAppearance="Saved"
+                        android:textSize="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/favicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="255dp"
+                        android:layout_marginTop="233dp"
+                        android:src="@drawable/fav"
+                        android:tint="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/logoutmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="290dp"
+                        android:text="Logout"
+                        android:textAppearance="Logout"
+                        android:textSize="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/logouticon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="253dp"
+                        android:layout_marginTop="283dp"
+                        android:src="@drawable/logout"
+                        android:tint="@color/black"
+                        />
+
+                </RelativeLayout>
+
 
                 <RelativeLayout
                     android:id="@+id/efficiency_elements1"
@@ -207,7 +329,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="358dp"
-                        android:background="@drawable/Rectangle2" />
+                        android:background="@drawable/rectangle2" />
 
                     <ImageView
                         android:id="@+id/image1"
@@ -234,7 +356,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="117dp"
                         android:layout_marginTop="438dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <View
@@ -243,7 +365,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="103dp"
                         android:layout_marginTop="438dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <View
@@ -252,7 +374,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="130dp"
                         android:layout_marginTop="438dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <View
@@ -261,7 +383,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="145dp"
                         android:layout_marginTop="438dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <TextView
@@ -294,7 +416,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="358dp"
-                        android:background="@drawable/Rectangle2"/>
+                        android:background="@drawable/rectangle2"/>
 
 
                     <ImageView
@@ -321,7 +443,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="310dp"
                         android:layout_marginTop="438dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <View
@@ -330,7 +452,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="325dp"
                         android:layout_marginTop="438dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <TextView
@@ -366,7 +488,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="530dp"
-                        android:background="@drawable/Rectangle2"/>
+                        android:background="@drawable/rectangle2"/>
 
                     <ImageView
                         android:id="@+id/image3"
@@ -393,7 +515,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="117dp"
                         android:layout_marginTop="610dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <View
@@ -402,7 +524,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="133dp"
                         android:layout_marginTop="610dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <View
@@ -411,7 +533,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="150dp"
                         android:layout_marginTop="610dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <TextView
@@ -447,7 +569,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="530dp"
-                        android:background="@drawable/Rectangle2"/>
+                        android:background="@drawable/rectangle2"/>
 
                     <ImageView
                         android:id="@+id/image4"
@@ -473,7 +595,7 @@
                         android:layout_height="14dp"
                         android:layout_marginLeft="325dp"
                         android:layout_marginTop="610dp"
-                        android:background="@drawable/Star"
+                        android:background="@drawable/star"
                         />
 
                     <TextView
@@ -506,7 +628,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="700dp"
-                        android:background="@drawable/Rectangle2"/>
+                        android:background="@drawable/rectangle2"/>
 
                     <ImageView
                         android:id="@+id/image5"
@@ -523,7 +645,7 @@
                         android:layout_height="160dp"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="700dp"
-                        android:background="@drawable/Rectangle2"/>
+                        android:background="@drawable/rectangle2"/>
 
                     <ImageView
                         android:id="@+id/image6"
@@ -534,13 +656,11 @@
                         android:background="@drawable/image"
                         tools:ignore="DuplicateIds" />
 
-
-
                 </RelativeLayout>
 
             </RelativeLayout>
 
-            </RelativeLayout>
-        </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
 
-    </HorizontalScrollView>
+</HorizontalScrollView>
