@@ -238,7 +238,6 @@
                         android:layout_marginLeft="300dp"
                         android:layout_marginTop="130dp"
                         android:text="Home"
-                        android:textAppearance="Home"
                         android:textSize="25dp"/>
 
                     <ImageView
@@ -248,7 +247,6 @@
                         android:layout_marginStart="265dp"
                         android:layout_marginTop="140dp"
                         android:src="@drawable/home"
-                        android:tint="@color/black"
                         />
 
                     <TextView
@@ -258,7 +256,6 @@
                         android:layout_marginLeft="300dp"
                         android:layout_marginTop="180dp"
                         android:text="Profile"
-                        android:textAppearance="Profile"
                         android:textSize="25dp"/>
 
                     <ImageView
@@ -268,7 +265,6 @@
                         android:layout_marginStart="263dp"
                         android:layout_marginTop="177dp"
                         android:src="@drawable/acc"
-                        android:tint="@color/black"
                         />
 
                     <TextView
@@ -278,7 +274,6 @@
                         android:layout_marginLeft="300dp"
                         android:layout_marginTop="230dp"
                         android:text="Saved"
-                        android:textAppearance="Saved"
                         android:textSize="25dp"/>
 
                     <ImageView
@@ -288,7 +283,6 @@
                         android:layout_marginStart="255dp"
                         android:layout_marginTop="233dp"
                         android:src="@drawable/fav"
-                        android:tint="@color/black"
                         />
 
                     <TextView
@@ -298,7 +292,6 @@
                         android:layout_marginLeft="300dp"
                         android:layout_marginTop="290dp"
                         android:text="Logout"
-                        android:textAppearance="Logout"
                         android:textSize="25dp"/>
 
                     <ImageView
@@ -308,7 +301,6 @@
                         android:layout_marginStart="253dp"
                         android:layout_marginTop="283dp"
                         android:src="@drawable/logout"
-                        android:tint="@color/black"
                         />
 
                 </RelativeLayout>

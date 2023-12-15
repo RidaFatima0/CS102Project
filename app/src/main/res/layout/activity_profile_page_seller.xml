@@ -2,8 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/loadingscre"
-    android:layout_width="411dp"
-    android:layout_height="800dp"
+    android:layout_width="390dp"
+    android:layout_height="850dp"
     android:clipToOutline="true"
     android:background="#FFFFFF"
     >
@@ -86,7 +86,6 @@
             android:layout_marginTop="305dp"
             android:textSize="18dp"
             android:text="Edit"
-            android:textAppearance="Edit"
             android:gravity="top"
             />
 
@@ -302,8 +301,7 @@
                 android:layout_marginStart="75dp"
                 android:layout_marginTop="515dp"
                 android:textSize="15dp"
-                android:text="Edit"
-                android:textAppearance="Edit"/>
+                android:text="Edit"/>
 
             <TextView
                 android:id="@+id/viewrented1"
@@ -312,8 +310,7 @@
                 android:layout_marginStart="115dp"
                 android:layout_marginTop="515dp"
                 android:textSize="15dp"
-                android:text="View"
-                android:textAppearance="View"/>
+                android:text="View"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -389,8 +386,7 @@
                 android:layout_marginStart="255dp"
                 android:layout_marginTop="515dp"
                 android:textSize="15dp"
-                android:text="Edit"
-                android:textAppearance="Edit"/>
+                android:text="Edit"/>
 
             <TextView
                 android:id="@+id/viewrented2"
@@ -399,20 +395,48 @@
                 android:layout_marginStart="290dp"
                 android:layout_marginTop="515dp"
                 android:textSize="15dp"
-                android:text="View"
-                android:textAppearance="View"/>
+                android:text="View"/>
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/createlisting"
+        <RelativeLayout
+            android:id="@+id/createnewlisting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="540dp"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:text="Create New Listing"
-            android:textAppearance="View"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp">
+
+            <View
+                android:id="@+id/createnewlistingouter"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="548dp"
+                android:background="@drawable/rectangle2" />
+
+            <ImageView
+                android:id="@+id/plussign"
+                android:layout_width="111.25dp"
+                android:layout_height="84.02dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="565.62dp"
+                android:background="@drawable/addnew"
+                />
+
+            <TextView
+                android:id="@+id/createnewlistingtext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="645dp"
+                android:text="Create New Listing"
+
+                android:textColor="@color/_16_300_tl_year_color"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </RelativeLayout>

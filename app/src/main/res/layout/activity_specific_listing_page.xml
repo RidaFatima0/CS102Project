@@ -1,20 +1,6 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="wrap_content" >
-    <!--
-    /*
-     *	This content is generated from the API File Info.
-     *	(Alt+Shift+Ctrl+I).
-     *
-     *	@desc
-     *	@file 		specificlistingpage
-     *	@date 		Tuesday 12th of December 2023 01:06:48 PM
-     *	@title 		Page 1
-     *	@author
-     *	@keywords
-     *	@generator 	Export Kit v1.3.figma
-     *
-     */
-    -->
+
     <ScrollView android:id="@+id/specificlistingpage"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -24,7 +10,6 @@
             android:layout_height="wrap_content" >
 
 
-
             <RelativeLayout android:id="@+id/page_specificlistingpage_ek1"
                 android:layout_marginTop="0dp"
                 android:layout_marginStart="0dp"
@@ -32,11 +17,10 @@
                 android:layout_height="wrap_content"
                 >
 
-
                 <View
                     android:id="@+id/_bg__specificlistingpage_ek2"
                     android:layout_width="400dp"
-                    android:layout_height="810dp"
+                    android:layout_height="850dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/_bg__specificlistingpage_ek2_shape" />
@@ -237,13 +221,7 @@
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
-            <ImageView android:id="@+id/line_3"
-                android:src="@drawable/line_3"
-                android:contentDescription="line_3"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="694dp"
-                android:layout_width="360dp"
-                android:layout_height="1dp" />
+
 
             <ImageView android:id="@+id/line_5"
                 android:src="@drawable/line_5"
@@ -252,18 +230,6 @@
                 android:layout_marginTop="614dp"
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
-
-
-
-            <TextView android:id="@+id/financial_calculation__determine_whether_you_can_afford_this_land_"
-                android:textSize="11sp"
-                android:textColor="@color/_bg__navbar_ek1_color"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="619dp"
-                android:layout_width="346.1dp"
-                android:layout_height="24.1dp"
-                android:text="@string/financial_calculation__determine_whether_you_can_afford_this_land__string"
-                />
 
             <ImageView android:id="@+id/line_4"
                 android:src="@drawable/line_4"
@@ -283,42 +249,18 @@
                 android:text="@string/description__tenant_must_utilize_the_land_for_agriculture_purpose___see_more____string"
                 />
 
-
-
-
-            <RelativeLayout android:id="@+id/login_button"
-                android:layout_marginTop="745dp"
-                android:layout_marginStart="68dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-                <View
-                    android:id="@+id/rectangle_10"
-                    android:layout_width="253dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="3dp"
-                    android:background="@drawable/rectangle_10_shape" />
-
-                <TextView android:id="@+id/request_seller_contact"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal|center"
-                    android:gravity="center"
-                    android:textSize="14sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_width="218.4dp"
-                    android:layout_height="25.37dp"
-                    android:text="@string/request_seller_contact_string"
-                    />
-
-            </RelativeLayout>
-
+            <TextView android:id="@+id/financial_calculation__determine_whether_you_can_afford_this_land_"
+                android:textSize="11sp"
+                android:textColor="@color/_bg__navbar_ek1_color"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="629dp"
+                android:layout_width="346.1dp"
+                android:layout_height="24.1dp"
+                android:text="@string/financial_calculation__determine_whether_you_can_afford_this_land__string"
+                />
 
             <RelativeLayout android:id="@+id/login_button_ek2"
-                android:layout_marginTop="649dp"
+                android:layout_marginTop="659dp"
                 android:layout_marginStart="200dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -345,38 +287,8 @@
                     />
             </RelativeLayout>
 
-            <RelativeLayout android:id="@+id/login_button_ek4"
-                android:layout_marginTop="701dp"
-                android:layout_marginStart="67dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-                <View   android:id="@+id/rectangle_10_ek2"
-                    android:background="@drawable/rectangle_10_ek2_shape"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_width="253dp"
-                    android:layout_height="38dp" />
-
-                <TextView android:id="@+id/rent"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal|center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_marginLeft="17dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_width="219dp"
-                    android:layout_height="26.97dp"
-                    android:text="@string/rent_string"
-                    />
-
-            </RelativeLayout>
-
-
             <RelativeLayout android:id="@+id/e_mail_textbox"
-                android:layout_marginTop="643dp"
+                android:layout_marginTop="653dp"
                 android:layout_marginStart="27dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -401,6 +313,72 @@
                     android:text="@string/monthly_income_string"
                     android:textColor="@color/_bg__navbar_ek1_color"
                     android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <ImageView android:id="@+id/line_3"
+                android:src="@drawable/line_3"
+                android:contentDescription="line_3"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="714dp"
+                android:layout_width="360dp"
+                android:layout_height="1dp" />
+
+            <RelativeLayout android:id="@+id/login_button_ek4"
+                android:layout_marginTop="741dp"
+                android:layout_marginStart="67dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View   android:id="@+id/rectangle_10_ek2"
+                    android:background="@drawable/rectangle_10_ek2_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="253dp"
+                    android:layout_height="38dp" />
+
+                <TextView android:id="@+id/rent"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_width="219dp"
+                    android:layout_height="26.97dp"
+                    android:text="@string/rent_string"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/elements"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+                    android:id="@+id/rectangle_10"
+                    android:layout_width="253dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="742dp"
+                    android:background="@drawable/rectangle_10_shape" />
+
+                <TextView android:id="@+id/request_seller_contact"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="750dp"
+                    android:layout_width="218.4dp"
+                    android:layout_height="25.37dp"
+                    android:text="@string/request_seller_contact_string"
+                    />
 
             </RelativeLayout>
 

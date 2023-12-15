@@ -1,9 +1,9 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/loadingscre"
+    android:id="@+id/profilepagetenant"
     android:layout_width="411dp"
-    android:layout_height="740dp"
+    android:layout_height="860dp"
     android:clipToOutline="true"
     android:background="#FFFFFF"
     >
@@ -86,7 +86,6 @@
             android:layout_marginTop="305dp"
             android:textSize="18dp"
             android:text="Edit"
-            android:textAppearance="Edit"
             android:gravity="top"
             />
 
@@ -295,8 +294,7 @@
             android:layout_marginStart="85dp"
             android:layout_marginTop="515dp"
             android:textSize="15dp"
-            android:text="Pay Rent"
-            android:textAppearance="Pay Rent"/>
+            android:text="Pay Rent"/>
     </RelativeLayout>
 
 

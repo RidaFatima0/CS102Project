@@ -68,7 +68,6 @@
             android:layout_marginTop="250dp"
             android:textSize="18dp"
             android:text="Edit Profile Picture"
-            android:textAppearance="Edit"
             android:gravity="top"
             />
 

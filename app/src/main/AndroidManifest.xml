@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:label="FirebaseAuthentication"
+        android:theme="@style/Theme.Material3.Light">
+        <activity
+            android:name=".welcomeScreen"
+            android:exported="false" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signUp"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
         <activity
             android:name=".menuOptions"
             android:exported="false" />
@@ -13,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".specificListingPage"
-            android:exported="false" />
-        <activity
-            android:name=".signUp"
             android:exported="false" />
         <activity
             android:name=".profilePageSeller"
@@ -28,12 +46,6 @@
             android:exported="false" />
         <activity
             android:name=".mainMenu"
-            android:exported="false" />
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".welcomeScreen"
             android:exported="false" />
         <activity
             android:name=".favList"

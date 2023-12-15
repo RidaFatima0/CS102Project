@@ -15,7 +15,6 @@
         android:layout_height="wrap_content"
         >
 
-
         <View
             android:id="@+id/rectangle_1"
             android:layout_width="match_parent"
@@ -44,15 +43,6 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/vector_ek12"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="55dp"
-            android:contentDescription="vector_ek12"
-            android:src="@drawable/vector_ek12" />
-
 
     </RelativeLayout>
 
@@ -67,14 +57,30 @@
         android:layout_marginBottom="448dp"
         android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/editTextText"
+    <RelativeLayout android:id="@+id/emailpassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="0dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginBottom="304dp"
+        >
+    <EditText
+        android:id="@+id/emailtextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="457dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="text"
+        android:text="   E-mail"
+        android:textColor="#808080"/>
+
+    <EditText
+        android:id="@+id/passwordtextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="504dp"
         android:background="@drawable/border"
         android:ems="10"
         android:inputType="text"
@@ -85,36 +91,23 @@
         android:id="@+id/locklogo"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="458dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="488dp"
         android:contentDescription="applogo"
         android:src="@drawable/lock" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="98dp"
-        android:layout_marginBottom="357dp"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:inputType="text"
-        android:text="   E-mail"
-        android:textColor="#808080"/>
 
     <ImageView
         android:id="@+id/emaillogo"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="460dp"
         android:contentDescription="applogo"
         android:src="@drawable/email" />
+</RelativeLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginpageloginbutton"
         android:layout_width="126dp"
         android:layout_height="34dp"
         android:layout_alignParentStart="true"
@@ -188,17 +181,15 @@
         android:text="Don’t have an account?"
         android:textColor="#808080" />
 
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/signupinstead"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="738dp"
         android:background="@drawable/transparent"
-        android:text="Sign Up" />
-
+        android:text="Sign Up"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
 

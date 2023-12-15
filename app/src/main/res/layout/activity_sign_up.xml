@@ -68,7 +68,7 @@
         android:textSize="20dp"/>
 
     <TextView
-        android:id="@+id/firstName"
+        android:id="@+id/firstNametextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
@@ -83,7 +83,7 @@
         android:textColor="#808080" />
 
     <TextView
-        android:id="@+id/lastName"
+        android:id="@+id/lastNametextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
@@ -97,7 +97,7 @@
         android:textColor="#808080" />
 
     <TextView
-        android:id="@+id/phoneNumber"
+        android:id="@+id/phoneNumbertextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
@@ -111,7 +111,7 @@
         android:textColor="#808080" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/emailtextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
@@ -126,7 +126,7 @@
         android:textColor="#808080" />
 
     <TextView
-        android:id="@+id/password"
+        android:id="@+id/passwordtextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
@@ -141,7 +141,7 @@
         android:textColor="#808080" />
 
     <TextView
-        android:id="@+id/confirmPassword"
+        android:id="@+id/confirmPasswordtextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
@@ -167,7 +167,7 @@
         />
 
     <Button
-        android:id="@+id/signupbutton"
+        android:id="@+id/signuppagesinupbutton"
         android:layout_width="126dp"
         android:layout_height="34dp"
         android:layout_alignParentStart="true"
@@ -176,6 +176,16 @@
         android:background="@drawable/rbutton"
         android:text="SIGN UP"
         android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logininstead"
+        android:text="Click to Login Instead"
+        android:layout_marginTop="700dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/passwordicon"
