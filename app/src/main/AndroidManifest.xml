@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:label="FirebaseAuthentication"
         android:theme="@style/Theme.Material3.Light">
         <activity
+            android:name=".specificListingPage2LoggedOut"
+            android:exported="false" />
+        <activity
+            android:name=".specificListingPageLoggedOut"
+            android:exported="false" />
+        <activity
+            android:name=".viewSellerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".specificListingPage2"
+            android:exported="false" />
+        <activity
             android:name=".welcomeScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".mainMenu"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"
-            >
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -27,12 +39,18 @@
         <activity
             android:name=".login"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".signUp"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".mainMenuLoggedIn"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".menuOptions"
             android:exported="false" />
@@ -47,9 +65,6 @@
             android:exported="false" />
         <activity
             android:name=".profilePageTenant"
-            android:exported="false" />
-        <activity
-            android:name=".mainMenuLoggedIn"
             android:exported="false" />
         <activity
             android:name=".favList"

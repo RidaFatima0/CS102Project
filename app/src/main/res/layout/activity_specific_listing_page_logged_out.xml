@@ -20,7 +20,7 @@
                 <View
                     android:id="@+id/_bg__specificlistingpage_ek2"
                     android:layout_width="400dp"
-                    android:layout_height="850dp"
+                    android:layout_height="720dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/_bg__specificlistingpage_ek2_shape" />
@@ -80,40 +80,14 @@
                         android:contentDescription="applogo"
                         android:src="@drawable/applogo" />
 
-                    <ImageView
-                        android:id="@+id/profile"
-                        android:layout_width="36.31dp"
-                        android:layout_height="36dp"
-                        android:layout_marginStart="330dp"
-                        android:layout_marginTop="40dp"
-                        android:contentDescription="vector"
-                        android:src="@drawable/vector" />
-                    <ImageView
-                        android:id="@+id/profile2"
-                        android:layout_width="28.75dp"
-                        android:layout_height="7.7dp"
-                        android:layout_marginStart="334dp"
-                        android:layout_marginTop="58dp"
-                        android:contentDescription="vector_ek1"
-                        android:src="@drawable/vector_ek1" />
-
-                    <ImageView
-                        android:id="@+id/profile3"
+                    <TextView
+                        android:id="@+id/loginoptionbutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="342dp"
-                        android:layout_marginTop="45dp"
-                        android:contentDescription="vector_ek2"
-                        android:src="@drawable/vector_ek2" />
-
-                    <ImageView
-                        android:id="@+id/notificationicon"
-                        android:layout_width="25.67dp"
-                        android:layout_height="28dp"
-                        android:layout_marginStart="300dp"
-                        android:layout_marginTop="45dp"
-                        android:contentDescription="vector_ek11"
-                        android:src="@drawable/vector_ek11" />
+                        android:layout_marginStart="275dp"
+                        android:layout_marginTop="48dp"
+                        android:textSize="16dp"
+                        android:text="Login/Signup"/>
 
                 </RelativeLayout>
             </RelativeLayout>
@@ -285,16 +259,16 @@
                     />
             </RelativeLayout>
 
-                <TextView android:id="@+id/resultoutput"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="710dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Result    "
-                    />
+            <TextView android:id="@+id/resultoutput"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/_bg__specificlistingpage_ek2_color"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="710dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result    "
+                />
 
             <RelativeLayout android:id="@+id/e_mail_textbox"
                 android:layout_marginTop="656dp"
@@ -324,72 +298,6 @@
                     android:textSize="12sp" />
 
             </RelativeLayout>
-
-            <ImageView android:id="@+id/line_3"
-                android:src="@drawable/line_3"
-                android:contentDescription="line_3"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="734dp"
-                android:layout_width="360dp"
-                android:layout_height="1dp" />
-
-            <RelativeLayout android:id="@+id/login_button_ek4"
-                android:layout_marginTop="741dp"
-                android:layout_marginStart="67dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-                <View   android:id="@+id/rentbutton"
-                    android:background="@drawable/rectangle_10_ek2_shape"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_width="253dp"
-                    android:layout_height="38dp" />
-
-                <TextView android:id="@+id/rentTextView"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_marginLeft="17dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_width="219dp"
-                    android:layout_height="26.97dp"
-                    android:text="@string/rent_string"
-                    />
-            </RelativeLayout>
-
-            <RelativeLayout android:id="@+id/elements"
-                android:layout_marginTop="50dp"
-                android:layout_marginStart="0dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-                <View
-                    android:id="@+id/requestsellercontactbutton"
-                    android:layout_width="253dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="68dp"
-                    android:layout_marginTop="742dp"
-                    android:background="@drawable/rectangle_10_shape" />
-
-                <TextView android:id="@+id/requestsellercontacttextview"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal|center"
-                    android:gravity="center"
-                    android:textSize="14sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_marginStart="85dp"
-                    android:layout_marginTop="750dp"
-                    android:layout_width="218.4dp"
-                    android:layout_height="25.37dp"
-                    android:text="@string/request_seller_contact_string"
-                    />
-
-            </RelativeLayout>
-
         </RelativeLayout>
 
     </ScrollView>

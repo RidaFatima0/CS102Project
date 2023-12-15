@@ -7,12 +7,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +32,7 @@ public class login extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView textView;
 
+    ImageView applogo;
     @Override
     public void onStart() {
         super.onStart();
@@ -40,7 +43,6 @@ public class login extends AppCompatActivity {
             finish();
         }
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,17 @@ public class login extends AppCompatActivity {
         editTextEmail = findViewById(R.id.emailtextbox);
         editTextPassword = findViewById(R.id.passwordtextbox);
         buttonLogin = findViewById(R.id.loginpageloginbutton);
+
+        applogo = findViewById(R.id.applogo);
+        applogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), mainMenu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         textView= findViewById(R.id.signupinstead);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,5 +106,13 @@ public class login extends AppCompatActivity {
                         });
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), mainMenu.class);
+        startActivity(intent);
+        finish();
     }
 }

@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class viewListing extends AppCompatActivity {
+public class viewSellerProfile extends AppCompatActivity {
 
     ImageView applogo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_listing);
-
+        setContentView(R.layout.activity_view_seller_profile);
 
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {

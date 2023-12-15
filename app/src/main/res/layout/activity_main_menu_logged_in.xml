@@ -98,7 +98,7 @@
                         android:src="@drawable/vector_ek2" />
 
                     <ImageView
-                        android:id="@+id/notification"
+                        android:id="@+id/notificationicon"
                         android:layout_width="25.67dp"
                         android:layout_height="28dp"
                         android:layout_marginStart="300dp"
@@ -271,8 +271,8 @@
 
                     <TextView
                         android:id="@+id/listing1"
-                        android:layout_width="86dp"
-                        android:layout_height="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="465dp"
@@ -280,10 +280,8 @@
 
                     <TextView
                         android:id="@+id/listing1price"
-                        android:layout_width="150dp"
-                        android:layout_height="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="55dp"
                         android:layout_marginTop="485dp"
                         android:text="16300TL/month"
@@ -295,12 +293,9 @@
                         android:id="@+id/rectangle2"
                         android:layout_width="140dp"
                         android:layout_height="160dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="358dp"
                         android:background="@drawable/rectangle2"/>
-
 
                     <ImageView
                         android:id="@+id/image2"
@@ -340,10 +335,8 @@
 
                     <TextView
                         android:id="@+id/listing2"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="230dp"
                         android:layout_marginTop="465dp"
@@ -352,10 +345,8 @@
 
                     <TextView
                         android:id="@+id/listing2price"
-                        android:layout_width="150dp"
-                        android:layout_height="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="240dp"
                         android:layout_marginTop="480dp"
                         android:text="7500TL/month"
@@ -367,8 +358,6 @@
                         android:id="@+id/rectangle3"
                         android:layout_width="140dp"
                         android:layout_height="160dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_marginLeft="40dp"
                         android:layout_marginTop="530dp"
                         android:background="@drawable/rectangle2"/>
@@ -421,10 +410,8 @@
 
                     <TextView
                         android:id="@+id/listing3"
-                        android:layout_width="100dp"
-                        android:layout_height="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="50dp"
                         android:layout_marginTop="634dp"
@@ -433,10 +420,8 @@
 
                     <TextView
                         android:id="@+id/listing3price"
-                        android:layout_width="150dp"
-                        android:layout_height="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="56dp"
                         android:layout_marginTop="655dp"
                         android:text="12500TL/month"
@@ -483,8 +468,8 @@
 
                     <TextView
                         android:id="@+id/listing4"
-                        android:layout_width="86dp"
-                        android:layout_height="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="235dp"
                         android:layout_marginTop="635dp"
@@ -493,15 +478,14 @@
 
                     <TextView
                         android:id="@+id/listing4price"
-                        android:layout_width="150dp"
-                        android:layout_height="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="235dp"
                         android:layout_marginTop="653dp"
                         android:text="10000TL/month"
                         android:textColor="@color/_16_300_tl_year_color"
                         android:textSize="12dp"
                         android:textStyle="bold" />
-
 
                     <View
                         android:id="@+id/rectangle5"
@@ -515,12 +499,42 @@
 
                     <ImageView
                         android:id="@+id/image5"
-                        android:layout_width="111.25dp"
-                        android:layout_height="84.02dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="55dp"
                         android:layout_marginTop="720dp"
                         android:background="@drawable/image5"
                         tools:ignore="DuplicateIds" />
+
+                    <ImageView
+                        android:id="@+id/bookmark5"
+                        android:layout_width="18dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="149dp"
+                        android:layout_marginTop="812dp"
+                        android:layout_marginBottom="342dp"
+                        android:background="@drawable/bookmark" />
+
+                    <TextView
+                        android:id="@+id/listing5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="810dp"
+                        android:gravity="center_horizontal|top"
+                        android:text="Ankara/Ayas" />
+
+                    <TextView
+                        android:id="@+id/listing5price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="827dp"
+                        android:text="8000TL/month"
+                        android:textColor="@color/_16_300_tl_year_color"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
 
                     <View
                         android:id="@+id/rectangle6"
@@ -532,14 +546,42 @@
 
                     <ImageView
                         android:id="@+id/image6"
-                        android:layout_width="111.25dp"
-                        android:layout_height="84.02dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="235dp"
                         android:layout_marginTop="720dp"
                         android:background="@drawable/image"
                         tools:ignore="DuplicateIds" />
 
+                    <ImageView
+                        android:id="@+id/bookmark6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="329dp"
+                        android:layout_marginTop="812dp"
+                        android:layout_marginBottom="342dp"
+                        android:background="@drawable/bookmark" />
 
+                    <TextView
+                        android:id="@+id/listing6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="235dp"
+                        android:layout_marginTop="810dp"
+                        android:gravity="center_horizontal|top"
+                        android:text="Konya/Meram" />
+
+                    <TextView
+                        android:id="@+id/listing6price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="238dp"
+                        android:layout_marginTop="827dp"
+                        android:text="9000TL/month"
+                        android:textColor="@color/_16_300_tl_year_color"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 

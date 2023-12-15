@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class specificListingPage extends AppCompatActivity {
+public class specificListingPage2 extends AppCompatActivity {
 
     TextView edit;
     View calculate;

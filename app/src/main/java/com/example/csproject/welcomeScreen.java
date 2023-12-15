@@ -12,14 +12,15 @@ public class welcomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
-//        Intent intent = new Intent(getApplicationContext(), login.class);
-//        startActivity(intent);
-//        finish();
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent i  = new Intent(welcomeScreen.this, mainMenu.class);
+                startActivity(i);
             }
-        },3000);
+        },2000);
+
+
     }
 }

@@ -9,7 +9,7 @@
     android:background="#689A15"
     >
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/welcomescreenlogo"
         android:layout_width="wrap_content"
         android:layout_height="203dp"
         android:layout_centerHorizontal="true"

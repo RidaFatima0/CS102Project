@@ -64,37 +64,19 @@
             android:src="@drawable/image_3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="150dp"
-            android:layout_width="120dp"
-            android:layout_height="120dp" />
+            android:layout_width="140dp"
+            android:layout_height="140dp" />
 
         <TextView android:id="@+id/mustafa_yildirim"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="118dp"
-            android:layout_marginTop="279dp"
+            android:layout_marginTop="299dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mustafa_yildirim_string"
             />
-
-        <TextView
-            android:id="@+id/editbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="179dp"
-            android:layout_marginTop="305dp"
-            android:textSize="18dp"
-            android:textStyle="italic"
-            android:text="Edit"/>
-
-<!--        <View-->
-<!--            android:id="@+id/editlogo"-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:layout_marginTop="330dp"-->
-<!--            android:src="@drawable/edit"/>-->
 
         <ImageView android:id="@+id/line"
             android:src="@drawable/line_1"
@@ -113,15 +95,6 @@
             android:textSize="18dp"
             android:text="From:                     Ankara"/>
 
-        <!--        <View-->
-        <!--            android:id="@+id/editlogo"-->
-        <!--            android:layout_width="40dp"-->
-        <!--            android:layout_height="20dp"-->
-        <!--            android:layout_marginTop="330dp"-->
-        <!--            android:layout_marginStart="30dp"-->
-        <!--            android:src="@drawable/usermale"-->
-        <!--            android:tint="@color/black" />-->
-
         <TextView
             android:id="@+id/membersince"
             android:layout_width="wrap_content"
@@ -131,15 +104,6 @@
             android:textSize="18dp"
             android:text="Member Since:      2021"/>
 
-
-        <!--        <View-->
-        <!--            android:id="@+id/editlogo"-->
-        <!--            android:layout_width="40dp"-->
-        <!--            android:layout_height="20dp"-->
-        <!--            android:layout_marginTop="330dp"-->
-        <!--            android:layout_marginStart="30dp"-->
-        <!--            android:src="@drawable/usermale"-->
-        <!--            android:tint="@color/black" />-->
     </RelativeLayout>
 
     <RelativeLayout
@@ -160,7 +124,7 @@
 
         <View
             android:id="@+id/rectangle"
-            android:layout_width="205dp"
+            android:layout_width="400dp"
             android:layout_height="37dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="1.07dp"
@@ -172,33 +136,12 @@
 
         <TextView
             android:id="@+id/yourListings"
-            android:layout_width="281dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="453dp"
-            android:text="Your Listings"
+            android:text="Seller Listings"
             android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <View
-            android:id="@+id/rectangle2"
-            android:layout_width="205dp"
-            android:layout_height="37dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="205dp"
-            android:layout_marginTop="450dp"
-            android:background="@drawable/rectangle_9_shape"
-            />
-
-        <TextView
-            android:id="@+id/rented"
-            android:layout_width="281dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="270dp"
-            android:layout_marginTop="453dp"
-            android:text="Rented"
-            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -218,7 +161,7 @@
             android:layout_marginTop="0dp">
 
             <View
-                android:id="@+id/rectangle3"
+                android:id="@+id/rectangle1"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
                 android:layout_alignParentLeft="true"
@@ -274,8 +217,8 @@
 
             <TextView
                 android:id="@+id/listing1"
-                android:layout_width="86dp"
-                android:layout_height="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="465dp"
@@ -292,23 +235,6 @@
                 android:textSize="12dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/editrented1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="75dp"
-                android:layout_marginTop="515dp"
-                android:textSize="15dp"
-                android:text="Edit"/>
-
-            <TextView
-                android:id="@+id/viewrented1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="115dp"
-                android:layout_marginTop="515dp"
-                android:textSize="15dp"
-                android:text="View"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -319,7 +245,7 @@
             android:layout_marginTop="0dp">
 
             <View
-                android:id="@+id/rectangle4"
+                android:id="@+id/rectangle2"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
                 android:layout_alignParentLeft="true"
@@ -371,68 +297,12 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="480dp"
+                android:layout_marginTop="485dp"
                 android:text="7500TL/month"
                 android:textColor="@color/_16_300_tl_year_color"
                 android:textSize="12dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/editrented2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="255dp"
-                android:layout_marginTop="515dp"
-                android:textSize="15dp"
-                android:text="Edit"/>
-
-            <TextView
-                android:id="@+id/viewrented2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="515dp"
-                android:textSize="15dp"
-                android:text="View"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/createnewlisting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="0dp">
-
-            <View
-                android:id="@+id/createnewlistingouter"
-                android:layout_width="140dp"
-                android:layout_height="160dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="548dp"
-                android:background="@drawable/rectangle2" />
-
-            <ImageView
-                android:id="@+id/plussign"
-                android:layout_width="111.25dp"
-                android:layout_height="84.02dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="565.62dp"
-                android:background="@drawable/addnew"
-                />
-
-            <TextView
-                android:id="@+id/createnewlistingtext"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="650dp"
-                android:text="New Listing"
-
-                android:textColor="@color/_16_300_tl_year_color"
-                android:textSize="17dp"
-                android:textStyle="bold" />
         </RelativeLayout>
 
     </RelativeLayout>

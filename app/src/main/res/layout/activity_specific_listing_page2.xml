@@ -33,7 +33,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp" />
 
-                <TextView android:id="@+id/landownerName"
+                <TextView android:id="@+id/mustafa_yildirim"
                     android:textStyle="bold"
                     android:layout_gravity="center_horizontal|center"
                     android:gravity="center"
@@ -46,13 +46,14 @@
                     android:text="@string/mustafa_yildirim_string"
                     />
 
-                <TextView android:id="@+id/rentamount"
+                <TextView android:id="@+id/_16_300_tl_year"
                     android:textSize="14sp"
-                    android:layout_marginLeft="125dp"
+                    android:textColor="@color/_16_300_tl_year_color"
+                    android:layout_marginLeft="130dp"
                     android:layout_marginTop="410dp"
                     android:layout_width="115.4dp"
                     android:layout_height="30.4dp"
-                    android:text="16000TL/Year"
+                    android:text="7500TL/Year"
                     />
 
 
@@ -107,7 +108,7 @@
                         android:src="@drawable/vector_ek2" />
 
                     <ImageView
-                        android:id="@+id/notificationicon"
+                        android:id="@+id/notification"
                         android:layout_width="25.67dp"
                         android:layout_height="28dp"
                         android:layout_marginStart="300dp"
@@ -127,7 +128,7 @@
                 >
 
                 <ImageView android:id="@+id/image1"
-                    android:src="@drawable/image11"
+                    android:src="@drawable/image6"
                     android:contentDescription="image11"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
@@ -190,7 +191,7 @@
                 android:layout_marginTop="475dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ankara/Ayas"
+                android:text="Konya/Meram"
                 />
 
             <ImageView android:id="@+id/location"
@@ -218,8 +219,6 @@
                 android:layout_marginTop="465dp"
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
-
-
 
             <ImageView android:id="@+id/line_5"
                 android:src="@drawable/line_5"
@@ -285,16 +284,16 @@
                     />
             </RelativeLayout>
 
-                <TextView android:id="@+id/resultoutput"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="710dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Result    "
-                    />
+            <TextView android:id="@+id/resultoutput"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/_bg__specificlistingpage_ek2_color"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="710dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result    "
+                />
 
             <RelativeLayout android:id="@+id/e_mail_textbox"
                 android:layout_marginTop="656dp"
