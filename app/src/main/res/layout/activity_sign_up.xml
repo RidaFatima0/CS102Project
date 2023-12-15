@@ -67,7 +67,7 @@
         android:textColor="#808080"
         android:textSize="20dp"/>
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/firstNametextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
@@ -82,7 +82,7 @@
         android:text="   FIRST NAME"
         android:textColor="#808080" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/lastNametextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
@@ -96,7 +96,7 @@
         android:text="   LAST NAME"
         android:textColor="#808080" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/phoneNumbertextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
@@ -110,7 +110,7 @@
         android:textSize="20dp"
         android:textColor="#808080" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/emailtextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
@@ -125,7 +125,7 @@
         android:textSize="20dp"
         android:textColor="#808080" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passwordtextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"
@@ -140,7 +140,7 @@
         android:textSize="20dp"
         android:textColor="#808080" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/confirmPasswordtextbox"
         android:layout_width="262dp"
         android:layout_height="32dp"

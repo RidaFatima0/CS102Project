@@ -9,22 +9,20 @@
         android:theme="@style/Theme.Material3.Light">
         <activity
             android:name=".welcomeScreen"
-            android:exported="false" >
+            android:exported="true" >
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".login"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Material3.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
         </activity>
         <activity
             android:name=".signUp"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Material3.Light.NoActionBar"/>
         <activity
             android:name=".menuOptions"
