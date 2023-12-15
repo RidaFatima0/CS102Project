@@ -35,52 +35,51 @@
                         android:background="@drawable/rectangle_1_shape" />
 
                     <ImageView
-                        android:id="@+id/tune"
+                        android:id="@+id/filtericon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="210dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="242dp"
+                        android:layout_marginTop="45dp"
                         android:contentDescription="tune"
                         android:src="@drawable/tune" />
-
 
                     <ImageView
                         android:id="@+id/applogo"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="28dp"
+                        android:layout_marginTop="24dp"
                         android:contentDescription="applogo"
                         android:src="@drawable/applogo" />
 
                     <EditText
                         android:id="@+id/search"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="98dp"
-                        android:layout_marginTop="53dp"
+                        android:layout_marginTop="43dp"
                         android:background="@drawable/border"
-                        android:ems="5"
+                        android:ems="6"
                         android:inputType="text"
                         android:text="      Search"
                         android:textColor="#808080"/>
 
                     <ImageView
-                        android:id="@+id/vector_ek12"
+                        android:id="@+id/searchicon"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="103dp"
-                        android:layout_marginTop="56dp"
+                        android:layout_marginTop="50dp"
                         android:contentDescription="vector_ek12"
                         android:src="@drawable/vector_ek12" />
 
 
                     <TextView
-                        android:id="@+id/textView"
+                        android:id="@+id/loginoptionbutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="280dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="285dp"
+                        android:layout_marginTop="48dp"
                         android:textSize="16dp"
                         android:text="Login/Signup"/>
 

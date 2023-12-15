@@ -49,30 +49,51 @@
                         android:background="@drawable/rectangle_1_shape" />
 
                     <ImageView
-                        android:id="@+id/tune"
+                        android:id="@+id/filtericon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="210dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="242dp"
+                        android:layout_marginTop="45dp"
                         android:contentDescription="tune"
                         android:src="@drawable/tune" />
-
 
                     <ImageView
                         android:id="@+id/applogo"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="28dp"
+                        android:layout_marginTop="24dp"
                         android:contentDescription="applogo"
                         android:src="@drawable/applogo" />
+
+                    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="98dp"
+                        android:layout_marginTop="43dp"
+                        android:background="@drawable/border"
+                        android:ems="6"
+                        android:inputType="text"
+                        android:text="      Search"
+                        android:textColor="#808080"/>
+
+                    <ImageView
+                        android:id="@+id/searchicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="103dp"
+                        android:layout_marginTop="50dp"
+                        android:contentDescription="vector_ek12"
+                        android:src="@drawable/vector_ek12" />
+
 
                     <ImageView
                         android:id="@+id/profile"
                         android:layout_width="36.31dp"
                         android:layout_height="36dp"
                         android:layout_marginStart="330dp"
-                        android:layout_marginTop="46dp"
+                        android:layout_marginTop="40dp"
                         android:contentDescription="vector"
                         android:src="@drawable/vector" />
 
@@ -81,7 +102,7 @@
                         android:layout_width="28.75dp"
                         android:layout_height="7.7dp"
                         android:layout_marginStart="334dp"
-                        android:layout_marginTop="63dp"
+                        android:layout_marginTop="58dp"
                         android:contentDescription="vector_ek1"
                         android:src="@drawable/vector_ek1" />
 
@@ -90,39 +111,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="342dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="45dp"
                         android:contentDescription="vector_ek2"
-                        android:src="@drawable/vector_ek2" />
+                        android:src="@drawable/vector_ek2"
+                        />
 
                     <ImageView
                         android:id="@+id/notification"
                         android:layout_width="25.67dp"
                         android:layout_height="28dp"
                         android:layout_marginStart="300dp"
-                        android:layout_marginTop="52dp"
+                        android:layout_marginTop="45dp"
                         android:contentDescription="vector_ek11"
                         android:src="@drawable/vector_ek11" />
-
-                    <EditText
-                        android:id="@+id/search"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="98dp"
-                        android:layout_marginTop="53dp"
-                        android:background="@drawable/border"
-                        android:ems="5"
-                        android:inputType="text"
-                        android:text="      Search"
-                        android:textColor="#808080"/>
-
-                    <ImageView
-                        android:id="@+id/vector_ek12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="103dp"
-                        android:layout_marginTop="56dp"
-                        android:contentDescription="vector_ek12"
-                        android:src="@drawable/vector_ek12" />
 
                 </RelativeLayout>
 
@@ -216,7 +217,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout android:id="@+id/menuOptions"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginStart="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -225,9 +226,9 @@
                     <View
                         android:id="@+id/menu"
                         android:layout_width="139dp"
-                        android:layout_height="248dp"
+                        android:layout_height="228dp"
                         android:layout_marginLeft="255dp"
-                        android:layout_marginTop="100dp"
+                        android:layout_marginTop="118dp"
                         android:background="#E6ACBC98"
                         />
 

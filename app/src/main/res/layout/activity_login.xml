@@ -28,7 +28,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:contentDescription="applogo"
             android:src="@drawable/applogo" />
 
@@ -37,7 +37,7 @@
             android:layout_width="281dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="110dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="33dp"
             android:text="A GREEN DEAL"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
@@ -63,7 +63,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
-    <com.google.android.material.textfield.TextInputEditText
+
+        <EditText
         android:id="@+id/emailtextbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +76,7 @@
         android:text="   E-mail"
         android:textColor="#808080"/>
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/passwordtextbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -128,7 +129,7 @@
         android:textColor="#808080" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/googleicon"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_alignParentStart="true"
@@ -138,34 +139,29 @@
         android:src="@drawable/google" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/instaicon"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="141dp"
+        android:layout_marginStart="139dp"
         android:layout_marginBottom="133dp"
         android:src="@drawable/instagram" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/xicon"
         android:layout_width="57dp"
         android:layout_height="57dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="191dp"
-        android:layout_marginBottom="133dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginStart="193dp"
         android:src="@drawable/x" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="57dp"
-        android:layout_height="58dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="133dp"
+        android:id="@+id/fbicon"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="669dp"
         android:src="@drawable/fb" />
 
     <TextView

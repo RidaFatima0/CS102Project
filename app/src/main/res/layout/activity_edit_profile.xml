@@ -28,7 +28,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:contentDescription="applogo"
             android:src="@drawable/applogo" />
 
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="33dp"
             android:text="Edit Profile"
             android:textColor="#FFFFFF"
             android:textSize="30sp"

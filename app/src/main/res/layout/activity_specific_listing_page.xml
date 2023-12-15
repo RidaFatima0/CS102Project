@@ -86,16 +86,15 @@
                         android:layout_width="36.31dp"
                         android:layout_height="36dp"
                         android:layout_marginStart="330dp"
-                        android:layout_marginTop="46dp"
+                        android:layout_marginTop="40dp"
                         android:contentDescription="vector"
                         android:src="@drawable/vector" />
-
                     <ImageView
                         android:id="@+id/profile2"
                         android:layout_width="28.75dp"
                         android:layout_height="7.7dp"
                         android:layout_marginStart="334dp"
-                        android:layout_marginTop="63dp"
+                        android:layout_marginTop="58dp"
                         android:contentDescription="vector_ek1"
                         android:src="@drawable/vector_ek1" />
 
@@ -104,7 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="342dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="45dp"
                         android:contentDescription="vector_ek2"
                         android:src="@drawable/vector_ek2" />
 
@@ -113,7 +112,7 @@
                         android:layout_width="25.67dp"
                         android:layout_height="28dp"
                         android:layout_marginStart="300dp"
-                        android:layout_marginTop="52dp"
+                        android:layout_marginTop="45dp"
                         android:contentDescription="vector_ek11"
                         android:src="@drawable/vector_ek11" />
 

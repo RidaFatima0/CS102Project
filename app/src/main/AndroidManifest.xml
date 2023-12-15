@@ -16,6 +16,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".mainMenu"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".login"
             android:exported="true"
             android:theme="@style/Theme.Material3.Light.NoActionBar">
@@ -41,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".mainMenuLoggedIn"
-            android:exported="false" />
-        <activity
-            android:name=".mainMenu"
             android:exported="false" />
         <activity
             android:name=".favList"
