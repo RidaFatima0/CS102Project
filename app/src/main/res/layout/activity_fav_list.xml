@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/loadingscre"
     android:layout_width="393dp"
-    android:layout_height="800dp"
+    android:layout_height="860dp"
     android:clipToOutline="true"
     android:background="#FFFFFF"
     >
@@ -62,7 +62,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="138dp"
-            android:background="@drawable/Rectangle2" />
+            android:background="@drawable/rectangle2" />
 
         <ImageView
             android:id="@+id/image1"
@@ -79,7 +79,7 @@
             android:layout_height="32dp"
             android:layout_marginLeft="149dp"
             android:layout_marginTop="250dp"
-            android:background="@drawable/Bookmarkfilled" />
+            android:background="@drawable/bookmarkfilled" />
 
         <View
             android:id="@+id/star10"
@@ -87,7 +87,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="117dp"
             android:layout_marginTop="218dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -96,7 +96,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="103dp"
             android:layout_marginTop="218dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -105,7 +105,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="218dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -114,7 +114,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="145dp"
             android:layout_marginTop="218dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <TextView
@@ -147,7 +147,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="220dp"
             android:layout_marginTop="138dp"
-            android:background="@drawable/Rectangle2"/>
+            android:background="@drawable/rectangle2"/>
 
 
         <ImageView
@@ -165,7 +165,7 @@
             android:layout_marginLeft="329dp"
             android:layout_marginTop="252dp"
             android:layout_marginBottom="342dp"
-            android:background="@drawable/Bookmarkfilled" />
+            android:background="@drawable/bookmarkfilled" />
 
         <View
             android:id="@+id/star20"
@@ -173,7 +173,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="310dp"
             android:layout_marginTop="218dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -182,7 +182,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="325dp"
             android:layout_marginTop="218dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <TextView

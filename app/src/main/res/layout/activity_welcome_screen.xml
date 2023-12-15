@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/loadingscre"
     android:layout_width="400dp"
-    android:layout_height="810dp"
+    android:layout_height="860dp"
     android:clipToOutline="true"
     android:background="#689A15"
     >

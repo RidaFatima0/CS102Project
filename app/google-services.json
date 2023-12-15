@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "552463569674",
+    "project_id": "agreendeal-9acb8",
+    "storage_bucket": "agreendeal-9acb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552463569674:android:8b5e0abc5e6eee8e4fe0f3",
+        "android_client_info": {
+          "package_name": "A.Green.Deal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPh5bMkX9pcN7bGNzi4hru6Z2eG6g9TTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552463569674:android:3e031c1af3b5c1114fe0f3",
+        "android_client_info": {
+          "package_name": "com.example.agreendeal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPh5bMkX9pcN7bGNzi4hru6Z2eG6g9TTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552463569674:android:007fbba5ab1ecd924fe0f3",
+        "android_client_info": {
+          "package_name": "com.example.csproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPh5bMkX9pcN7bGNzi4hru6Z2eG6g9TTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

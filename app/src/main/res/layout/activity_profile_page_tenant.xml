@@ -221,7 +221,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="358dp"
-            android:background="@drawable/Rectangle2" />
+            android:background="@drawable/rectangle2" />
 
         <ImageView
             android:id="@+id/image1"
@@ -238,7 +238,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="117dp"
             android:layout_marginTop="438dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -247,7 +247,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="103dp"
             android:layout_marginTop="438dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -256,7 +256,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="438dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <View
@@ -265,7 +265,7 @@
             android:layout_height="14dp"
             android:layout_marginLeft="145dp"
             android:layout_marginTop="438dp"
-            android:background="@drawable/Star"
+            android:background="@drawable/star"
             />
 
         <TextView
