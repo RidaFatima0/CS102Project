@@ -21,13 +21,7 @@
             android:name=".profilePageSeller"
             android:exported="false" />
         <activity
-            android:name=".profilePageBuyer"
-            android:exported="false" />
-        <activity
             android:name=".profilePageTenant"
-            android:exported="false" />
-        <activity
-            android:name=".profilePage"
             android:exported="false" />
         <activity
             android:name=".mainMenuLoggedIn"
