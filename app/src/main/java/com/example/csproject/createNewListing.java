@@ -5,15 +5,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class createNewListing extends AppCompatActivity {
 
+
+    private DatabaseReference mDatabase;
+    int listNumber = 0;
+    private EditText priceFill, descriptionFill, conditionFill, locationFill;
     ImageView applogo;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new_listing);
+
+        priceFill = findViewById(R.id.priceFill);
+        descriptionFill = findViewById(R.id.descriptionFill);
+        conditionFill = findViewById(R.id.conditionFill);
+        locationFill = findViewById(R.id.locationFill);
+
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +42,28 @@ public class createNewListing extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public String createListId(){
+        String listId = "user" + listNumber;
+        listNumber++;
+        return listId;
+    }
+
+
+    public void confirmListing(){
+        writeNewList(conditionFill.getText().toString(),
+                descriptionFill.getText().toString(),
+                locationFill.getText().toString(),
+                createListId(),
+                Integer.parseInt(priceFill.getText().toString()));
+        System.out.println("Oldu");
+    }
+
+    public void writeNewList(String condition, String description, String location, String listId, int rent) {
+        Listing listing = new Listing(condition, description, location, listId, rent);
+
+        mDatabase.child("listings").child(listId).setValue(listing);
     }
 
     @Override
