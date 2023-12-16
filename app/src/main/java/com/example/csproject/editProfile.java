@@ -70,36 +70,75 @@ public class editProfile extends AppCompatActivity {
         savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getFirstName = firstName.getText().toString();
-                String getLastName = lastName.getText().toString();
-                String getEmail = email.getText().toString();
-                String getPhoneNumber = phoneNumber.getText().toString();
-                String getPassword = password.getText().toString();
+                final String getFirstName = firstName.getText().toString().trim();
+                final String getLastName = lastName.getText().toString().trim();
+                final String getEmail = email.getText().toString().trim();
+                final String getPhoneNumber = phoneNumber.getText().toString().trim();
+                final String getPassword = password.getText().toString().trim();
 
-                HashMap<String, Object> hashMap = new HashMap<>();
-                hashMap.put("first name", getFirstName);
-                hashMap.put("last name", getLastName);
-                hashMap.put("email", getEmail);
-                hashMap.put("phone number", getPhoneNumber);
-                hashMap.put("password", getPassword);
+                if (getFirstName.isEmpty() || getLastName.isEmpty() || getEmail.isEmpty() || getPhoneNumber.isEmpty() || getPassword.isEmpty()) {
+                    Toast.makeText(editProfile.this, "All fields are required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
-                FirebaseFirestore.getInstance().collection("User").document("UserData").set(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(editProfile.this, "Data Saved Successfully.", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(editProfile.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                });
+                HashMap<String, Object> userData = new HashMap<>();
+                userData.put("first name", getFirstName);
+                userData.put("last name", getLastName);
+                userData.put("email", getEmail);
+                userData.put("phone number", getPhoneNumber);
+                userData.put("password", getPassword);
 
-//                Intent intent = new Intent(getApplicationContext(), profilePageTenant.class);
-//                startActivity(intent);
-//                finish();
+                FirebaseFirestore.getInstance().collection("User").document("UserData")
+                        .set(userData)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(editProfile.this, "Data Saved Successfully.", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(editProfile.this, "Failed to save data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        });
             }
         });
+
+//        savebutton = findViewById(R.id.savebutton);
+//        savebutton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String getFirstName = firstName.getText().toString();
+//                String getLastName = lastName.getText().toString();
+//                String getEmail = email.getText().toString();
+//                String getPhoneNumber = phoneNumber.getText().toString();
+//                String getPassword = password.getText().toString();
+//
+//                HashMap<String, Object> hashMap = new HashMap<>();
+//                hashMap.put("first name", getFirstName);
+//                hashMap.put("last name", getLastName);
+//                hashMap.put("email", getEmail);
+//                hashMap.put("phone number", getPhoneNumber);
+//                hashMap.put("password", getPassword);
+//
+//                FirebaseFirestore.getInstance().collection("User").document("UserData").set(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+//                    @Override
+//                    public void onSuccess(Void aVoid) {
+//                        Toast.makeText(editProfile.this, "Data Saved Successfully.", Toast.LENGTH_SHORT).show();
+//                    }
+//                }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Toast.makeText(editProfile.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//
+////                Intent intent = new Intent(getApplicationContext(), profilePageTenant.class);
+////                startActivity(intent);
+////                finish();
+//            }
+//        });
 
         profilepic = findViewById(R.id.profilepic);
         editProfilePicOption = findViewById(R.id.editprofilepic);

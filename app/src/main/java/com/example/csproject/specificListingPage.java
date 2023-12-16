@@ -5,21 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.firebase.auth.FirebaseAuth;
 
 public class specificListingPage extends AppCompatActivity {
 
-    TextView edit;
     View calculate;
-    FirebaseAuth mAuth;
     EditText monthlyincometextbox;
     TextView resultoutput, renttextview, requestcontact, landownerName;
     ImageView applogo, notification;
@@ -28,7 +22,6 @@ public class specificListingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_specific_listing_page);
-        mAuth = FirebaseAuth.getInstance();
 
         calculate = findViewById(R.id.calculatebutton);
         int rent = 16000;
@@ -40,11 +33,11 @@ public class specificListingPage extends AppCompatActivity {
                 resultoutput = findViewById(R.id.resultoutput);
                 if (monthlyincome*12 < rent){
                     resultoutput.setTextColor(Color.RED);
-                    resultoutput.setText("Cannot afford");
+                    resultoutput.setText("You cannot afford to rent this land.");
                 }
                 else{
-                    resultoutput.setTextColor(Color.GREEN);
-                    resultoutput.setText("Can afford");
+                    resultoutput.setTextColor(Color.rgb(87,160,0));
+                    resultoutput.setText("You can afford to rent this land.");
                 }
             }
         });
@@ -63,7 +56,7 @@ public class specificListingPage extends AppCompatActivity {
                 requestcontact.setText("Request sent to landownder.");
             }
         });
-
+//
         landownerName = findViewById(R.id.landownerName);
         landownerName.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +77,7 @@ public class specificListingPage extends AppCompatActivity {
             }
         });
 
+        notification = findViewById(R.id.notificationicon);
         notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,6 +86,7 @@ public class specificListingPage extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
     @Override

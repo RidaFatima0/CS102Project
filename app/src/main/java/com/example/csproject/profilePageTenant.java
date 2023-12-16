@@ -28,7 +28,7 @@ public class profilePageTenant extends AppCompatActivity {
             }
         });
 
-        edit = findViewById(R.id.editbutton);
+        edit = findViewById(R.id.edit);
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

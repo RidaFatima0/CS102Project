@@ -40,11 +40,11 @@ public class specificListingPage2 extends AppCompatActivity {
                 resultoutput = findViewById(R.id.resultoutput);
                 if (monthlyincome*12 < rent){
                     resultoutput.setTextColor(Color.RED);
-                    resultoutput.setText("Cannot afford");
+                    resultoutput.setText("You cannot afford to rent this land.");
                 }
                 else{
-                    resultoutput.setTextColor(Color.GREEN);
-                    resultoutput.setText("Can afford");
+                    resultoutput.setTextColor(Color.rgb(87,160,0));
+                    resultoutput.setText("You can afford to rent this land.");
                 }
             }
         });
@@ -84,6 +84,7 @@ public class specificListingPage2 extends AppCompatActivity {
             }
         });
 
+        notification = findViewById(R.id.notificationicon);
         notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

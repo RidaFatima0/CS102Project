@@ -110,9 +110,9 @@
     <Button
         android:id="@+id/loginpageloginbutton"
         android:layout_width="250dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="568dp"
+        android:layout_marginTop="558dp"
         android:background="@drawable/rbutton"
         android:text="LOGIN"
         android:textColor="#FFFFFF" />

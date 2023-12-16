@@ -6,19 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class mainMenuLoggedIn extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener{
 
-    FirebaseAuth mAuth;
+    //FirebaseAuth mAuth;
     View listing1, listing2;
     ImageView notification, profile;
 
@@ -26,7 +20,7 @@ public class mainMenuLoggedIn extends AppCompatActivity implements PopupMenu.OnM
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu_logged_in);
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
 
         listing1 = findViewById(R.id.rectangle1);
         listing1.setOnClickListener(new View.OnClickListener() {

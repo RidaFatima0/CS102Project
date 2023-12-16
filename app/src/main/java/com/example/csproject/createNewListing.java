@@ -1,19 +1,28 @@
 package com.example.csproject;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,25 +33,53 @@ import java.util.List;
 public class createNewListing extends AppCompatActivity {
 
 
-    private DatabaseReference mDatabase;
     int listNumber = 0;
-    private EditText priceFill, descriptionFill, conditionFill, locationFill;
+    private EditText price, description, condition, location;
+    ImageButton confirmButton;
     ImageView applogo;
-    Button uploadimage;
+    ImageView uploadimage;
+    String imageURL;
+    Uri uri;
+    DatabaseReference mDatabase;
+    FirebaseAuth mAuth;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new_listing);
-
-        priceFill = findViewById(R.id.priceFill);
-        descriptionFill = findViewById(R.id.descriptionFill);
-        conditionFill = findViewById(R.id.conditionFill);
-        locationFill = findViewById(R.id.locationFill);
-
-
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        mAuth = FirebaseAuth.getInstance();
+
+        price = findViewById(R.id.priceFill);
+        description = findViewById(R.id.descriptionFill);
+        condition = findViewById(R.id.conditionFill);
+        location = findViewById(R.id.locationFill);
+        uploadimage = findViewById(R.id.uploadimageButton);
+
+        ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if (result.getResultCode() == Activity.RESULT_OK){
+                    Intent data = result.getData();
+                    uri = data.getData();
+                    uploadimage.setImageURI(uri);
+                }
+                else{
+                    Toast.makeText(createNewListing.this, "No image selected", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        uploadimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent photoPicker = new Intent(Intent.ACTION_PICK);
+                photoPicker.setType("image/*");
+                activityResultLauncher.launch(photoPicker);
+            }
+        });
 
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {
@@ -54,28 +91,28 @@ public class createNewListing extends AppCompatActivity {
             }
         });
 
+        confirmButton = findViewById(R.id.confirmButton);
+        confirmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String listId = "user" + listNumber;
+                listNumber++;
+
+                Listing listing = new Listing(condition.getText().toString(),
+                        description.getText().toString(),
+                        location.getText().toString(), listId,
+                        Integer.parseInt(price.getText().toString()));
+
+                mDatabase.child("Listing").child(listId).setValue(listing);
+
+                Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
-    public String createListId(){
-        String listId = "user" + listNumber;
-        listNumber++;
-        return listId;
-    }
-    public void confirmListing(){
-        writeNewList(conditionFill.getText().toString(),
-                descriptionFill.getText().toString(),
-                locationFill.getText().toString(),
-                createListId(),
-                Integer.parseInt(priceFill.getText().toString()));
-        System.out.println("Oldu");
-    }
-
-    public void writeNewList(String condition, String description, String location, String listId, int rent) {
-        Listing listing = new Listing(condition, description, location, listId, rent);
-
-        mDatabase.child("listings").child(listId).setValue(listing);
-    }
     @Override
     public void onBackPressed() {
         super.onBackPressed();

@@ -319,7 +319,7 @@
                     android:layout_marginLeft="29dp"
                     android:layout_marginTop="9dp"
                     android:gravity="center"
-                    android:text="@string/monthly_income_string"
+                    android:hint="@string/monthly_income_string"
                     android:textColor="@color/_bg__navbar_ek1_color"
                     android:textSize="12sp" />
 

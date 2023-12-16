@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class favList extends AppCompatActivity {
 
     ImageView applogo;
-    View listing1, listing2;
+    ImageView listing1, listing2, bookmark1, bookmark2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,7 @@ public class favList extends AppCompatActivity {
             }
         });
 
-
-        listing1 = findViewById(R.id.rectangle1);
+        listing1 = findViewById(R.id.image1);
         listing1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +38,18 @@ public class favList extends AppCompatActivity {
             }
         });
 
-        listing2 = findViewById(R.id.rectangle2);
+        bookmark1 = findViewById(R.id.bookmark1);
+        bookmark1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(favList.this, "Listing removed from saved list.", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), UpdatedFavList.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        listing2 = findViewById(R.id.image1);
         listing2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,5 +58,16 @@ public class favList extends AppCompatActivity {
                 finish();
             }
         });
+
+//        bookmark2 = findViewById(R.id.bookmark2);
+//        bookmark2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(favList.this, "Listing removed from saved list.", Toast.LENGTH_LONG).show();
+//                Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
     }
 }

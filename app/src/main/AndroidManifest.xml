@@ -8,16 +8,13 @@
         android:label="FirebaseAuthentication"
         android:theme="@style/Theme.Material3.Light">
         <activity
-            android:name=".specificListingPage2LoggedOut"
+            android:name=".filter"
             android:exported="false" />
         <activity
-            android:name=".specificListingPageLoggedOut"
+            android:name=".mainMenuSearched"
             android:exported="false" />
         <activity
-            android:name=".viewSellerProfile"
-            android:exported="false" />
-        <activity
-            android:name=".specificListingPage2"
+            android:name=".UpdatedFavList"
             android:exported="false" />
         <activity
             android:name=".welcomeScreen"
@@ -39,24 +36,50 @@
         <activity
             android:name=".login"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-        <activity
-            android:name=".signUp"
-            android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-        <activity
-            android:name=".mainMenuLoggedIn"
-            android:exported="false">
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".signUp"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainMenuLoggedIn"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".specificListingPage2LoggedOut"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".specificListingPageLoggedOut"
+            android:exported="true" />
+        <activity
+            android:name=".viewSellerProfile"
+            android:exported="true" />
+        <activity
+            android:name=".specificListingPage2"
+            android:exported="true" />
+        <activity
             android:name=".viewListing"
             android:exported="true" />
         <activity
             android:name=".specificListingPage"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".profilePageSeller"
             android:exported="true" />
