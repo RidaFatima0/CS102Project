@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,7 +20,7 @@ public class mainMenuLoggedIn extends AppCompatActivity implements PopupMenu.OnM
 
     FirebaseAuth mAuth;
     View listing1, listing2;
-    ImageView notification;
+    ImageView notification, profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,42 +57,47 @@ public class mainMenuLoggedIn extends AppCompatActivity implements PopupMenu.OnM
                 finish();
             }
         });
-    }
 
-    public void showPopup(View view) {
-        PopupMenu popup = new PopupMenu(this, view);
-        popup.setOnMenuItemClickListener(this);
-        popup.inflate(R.menu.popup_menu);
-        popup.show();
+        profile = findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu popup = new PopupMenu(mainMenuLoggedIn.this, profile);
+                popup.setOnMenuItemClickListener(mainMenuLoggedIn.this);
+                popup.inflate(R.menu.popup_menu);
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        if (menuItem.getTitle().equals("\uD83C\uDFE0 Home")){
+                            Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if (menuItem.getTitle().equals("\uD83D\uDC64 Profile")){
+                            Intent intent = new Intent(getApplicationContext(), profilePageSeller.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if (menuItem.getTitle().equals("★ Saved")){
+                            Intent intent = new Intent(getApplicationContext(), favList.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if (menuItem.getTitle().equals("⍇ Log Out")){
+                            Intent intent = new Intent(getApplicationContext(), login.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        return false;
+                    }
+                });
+                popup.show();
+            }
+        });
     }
 
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
-        /*
-        switch (menuItem.getItemId()) {
-            case R.id.item1:
-                System.out.println("Item 1");
-                return true;
-
-            case R.id.item2:
-                System.out.println("Item 2");
-                return true;
-
-            case R.id.item3:
-                System.out.println("Item 3");
-                return true;
-
-            case R.id.item4:
-                System.out.println("Item 4");
-                return true;
-            default:
-                return false;
-
-        }
-        */
-
-        System.out.println("Hello");
         return false;
-
     }
 }

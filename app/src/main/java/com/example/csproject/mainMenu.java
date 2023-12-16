@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class mainMenu extends AppCompatActivity {
 
-    FirebaseAuth mAuth;
+    //FirebaseAuth mAuth;
     TextView textView;
     View listing1, listing2;
     ImageView notification;
@@ -23,7 +23,7 @@ public class mainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
         textView = findViewById(R.id.loginoptionbutton);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override

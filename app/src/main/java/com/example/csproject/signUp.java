@@ -23,23 +23,23 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class signUp extends AppCompatActivity {
 
-    TextInputEditText editTextEmail, editTextPassword, editfirstName, editLastName, editPhoneNumber;
+    TextInputEditText editTextEmail, editTextPassword, editfirstName, editLastName, editPhoneNumber, editConfirmPassword;
     Button buttonSignup;
     FirebaseAuth mAuth;
     TextView textView;
 
     ImageView applogo;
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
-            startActivity(intent);
-            finish();
-        }
-    }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser != null){
+//            Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+//            startActivity(intent);
+//            finish();
+//        }
+//    }
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
@@ -52,6 +52,7 @@ public class signUp extends AppCompatActivity {
         editfirstName = findViewById(R.id.firstNametextbox);
         editLastName = findViewById(R.id.lastNametextbox);
         editPhoneNumber = findViewById(R.id.phoneNumbertextbox);
+        editConfirmPassword = findViewById(R.id.confirmPasswordtextbox);
 
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +105,10 @@ public class signUp extends AppCompatActivity {
                 if (TextUtils.isEmpty(phoneNumber)){
                     Toast.makeText(signUp.this, "Enter phone number", Toast.LENGTH_SHORT).show();
                     return;
+                }
+                if (editTextPassword.equals(editConfirmPassword)){
+                    Toast.makeText(signUp.this, "Password are not the same.",
+                            Toast.LENGTH_SHORT).show();
                 }
 
                 mAuth.createUserWithEmailAndPassword(email, password)

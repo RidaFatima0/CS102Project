@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class profilePageSeller extends AppCompatActivity {
 
-    TextView edit;
-    ImageView applogo;
-    View listing1, listing2;
+    TextView edit, editrented1, editrented2;
+    ImageView applogo, newlisting;
+    View listing1, listing2, rectanglerented;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class profilePageSeller extends AppCompatActivity {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), specificListingPage2.class);
+                Intent intent = new Intent(getApplicationContext(), editProfile.class);
                 startActivity(intent);
                 finish();
             }
@@ -54,6 +54,46 @@ public class profilePageSeller extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), specificListingPage2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        rectanglerented = findViewById(R.id.rectanglerented);
+        rectanglerented.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), profilePageTenant.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        editrented1 = findViewById(R.id.editrented1);
+        editrented1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), createNewListing.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        editrented2 = findViewById(R.id.editrented2);
+        editrented2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), createNewListing.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        newlisting = findViewById(R.id.profilepic);
+        newlisting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), createNewListing.class);
                 startActivity(intent);
                 finish();
             }

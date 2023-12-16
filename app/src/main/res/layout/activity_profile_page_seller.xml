@@ -1,3 +1,4 @@
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,7 +8,6 @@
     android:clipToOutline="true"
     android:background="#FFFFFF"
     >
-
     <RelativeLayout
         android:layout_marginTop="0dp"
         android:layout_marginStart="0dp"
@@ -51,7 +51,7 @@
         android:layout_marginStart="0dp">
 
         <View
-            android:id="@+id/rectangle1"
+            android:id="@+id/rectangle4"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_centerHorizontal="true"
@@ -182,7 +182,7 @@
             android:textStyle="bold" />
 
         <View
-            android:id="@+id/rectangle2"
+            android:id="@+id/rectanglerented"
             android:layout_width="205dp"
             android:layout_height="37dp"
             android:layout_alignParentLeft="true"
@@ -218,7 +218,7 @@
             android:layout_marginTop="0dp">
 
             <View
-                android:id="@+id/rectangle3"
+                android:id="@+id/rectangle1"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
                 android:layout_alignParentLeft="true"
@@ -296,19 +296,10 @@
                 android:id="@+id/editrented1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="75dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginTop="515dp"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 android:text="Edit"/>
-
-            <TextView
-                android:id="@+id/viewrented1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="115dp"
-                android:layout_marginTop="515dp"
-                android:textSize="15dp"
-                android:text="View"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -319,7 +310,7 @@
             android:layout_marginTop="0dp">
 
             <View
-                android:id="@+id/rectangle4"
+                android:id="@+id/rectangle2"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
                 android:layout_alignParentLeft="true"
@@ -381,19 +372,11 @@
                 android:id="@+id/editrented2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="255dp"
+                android:layout_marginStart="275dp"
                 android:layout_marginTop="515dp"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 android:text="Edit"/>
 
-            <TextView
-                android:id="@+id/viewrented2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="515dp"
-                android:textSize="15dp"
-                android:text="View"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -404,7 +387,7 @@
             android:layout_marginTop="0dp">
 
             <View
-                android:id="@+id/createnewlistingouter"
+                android:id="@+id/rectanglecreatenewlisting"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
                 android:layout_alignParentLeft="true"
@@ -436,5 +419,4 @@
         </RelativeLayout>
 
     </RelativeLayout>
-
 </RelativeLayout>

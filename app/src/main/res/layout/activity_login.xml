@@ -73,7 +73,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:inputType="text"
-        android:text="   E-mail"
+        android:hint="  Email Address"
         android:textColor="#808080"/>
 
     <EditText
@@ -83,9 +83,9 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="504dp"
         android:background="@drawable/border"
+        app:passwordToggleEnabled="true"
         android:ems="10"
-        android:inputType="text"
-        android:text="   Password"
+        android:hint="  Password"
         android:textColor="#808080"/>
 
     <ImageView

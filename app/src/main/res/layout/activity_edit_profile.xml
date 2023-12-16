@@ -47,7 +47,7 @@
 
 
     <RelativeLayout
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="0dp"
         android:layout_marginStart="0dp"
         android:layout_width="400dp"
         android:layout_height="800dp"
@@ -71,9 +71,8 @@
             android:gravity="top"
             />
 
-
-        <TextView
-            android:id="@+id/textView9"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNametextbox"
             android:layout_width="262dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
@@ -84,11 +83,11 @@
             android:ems="10"
             android:textSize="20dp"
             android:inputType="text"
-            android:text="   FIRST NAME"
+            android:hint="   First Name"
             android:textColor="#808080" />
 
-        <TextView
-            android:id="@+id/textView10"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastNametextbox"
             android:layout_width="262dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
@@ -98,10 +97,11 @@
             android:ems="10"
             android:inputType="text"
             android:textSize="20dp"
-            android:text="   LAST NAME"
+            android:hint="   Last Name"
             android:textColor="#808080" />
 
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumbertextbox"
             android:layout_width="262dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
@@ -110,12 +110,12 @@
             android:background="@drawable/border"
             android:ems="10"
             android:inputType="text"
-            android:text="   PHONE"
+            android:hint="   Phone"
             android:textSize="20dp"
             android:textColor="#808080" />
 
-        <TextView
-            android:id="@+id/textView12"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailtextbox"
             android:layout_width="262dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
@@ -125,12 +125,12 @@
             android:background="@drawable/border"
             android:ems="10"
             android:inputType="text"
-            android:text="   EMAIL "
+            android:hint="   Email "
             android:textSize="20dp"
             android:textColor="#808080" />
 
-        <TextView
-            android:id="@+id/textView13"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordtextbox"
             android:layout_width="262dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
@@ -140,12 +140,12 @@
             android:background="@drawable/border"
             android:ems="10"
             android:inputType="text"
-            android:text="   PASSWORD"
+            android:hint="   Password"
             android:textSize="20dp"
             android:textColor="#808080" />
 
-        <TextView
-            android:id="@+id/confirmPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPasswordtextbox"
             android:layout_width="262dp"
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
@@ -155,7 +155,7 @@
             android:background="@drawable/border"
             android:ems="10"
             android:inputType="text"
-            android:text="   CONFIRM PASSWORD"
+            android:hint="   Confirm Password"
             android:textSize="20dp"
             android:textColor="#808080" />
 
@@ -171,11 +171,10 @@
             />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="126dp"
-            android:layout_height="34dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="135dp"
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="650dp"
             android:background="@drawable/rbutton"
             android:text="Save"

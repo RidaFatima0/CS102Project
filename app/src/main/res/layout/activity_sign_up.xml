@@ -79,7 +79,7 @@
         android:ems="10"
         android:textSize="20dp"
         android:inputType="text"
-        android:text="   FIRST NAME"
+        android:hint="   First Name"
         android:textColor="#808080" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -93,7 +93,7 @@
         android:ems="10"
         android:inputType="text"
         android:textSize="20dp"
-        android:text="   LAST NAME"
+        android:hint="   Last Name"
         android:textColor="#808080" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -106,7 +106,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:inputType="text"
-        android:text="   PHONE"
+        android:hint="   Phone"
         android:textSize="20dp"
         android:textColor="#808080" />
 
@@ -121,7 +121,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:inputType="text"
-        android:text="   EMAIL "
+        android:hint="   Email "
         android:textSize="20dp"
         android:textColor="#808080" />
 
@@ -136,7 +136,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:inputType="text"
-        android:text="   PASSWORD"
+        android:hint="   Password"
         android:textSize="20dp"
         android:textColor="#808080" />
 
@@ -151,7 +151,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:inputType="text"
-        android:text="   CONFIRM PASSWORD"
+        android:hint="   Confirm Password"
         android:textSize="20dp"
         android:textColor="#808080" />
 
@@ -168,10 +168,9 @@
 
     <Button
         android:id="@+id/signuppagesinupbutton"
-        android:layout_width="126dp"
-        android:layout_height="34dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="135dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="650dp"
         android:background="@drawable/rbutton"
         android:text="SIGN UP"
@@ -182,9 +181,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/logininstead"
         android:text="Click to Login Instead"
-        android:layout_marginTop="700dp"
+        android:layout_marginTop="710dp"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold"/>
 
     <ImageView

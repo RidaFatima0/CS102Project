@@ -52,23 +52,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".menuOptions"
-            android:exported="false" />
-        <activity
             android:name=".viewListing"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".specificListingPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".profilePageSeller"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".profilePageTenant"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".favList"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".createNewListing"
             android:exported="true" />
