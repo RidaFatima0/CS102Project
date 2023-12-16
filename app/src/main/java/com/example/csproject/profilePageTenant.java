@@ -12,6 +12,7 @@ public class profilePageTenant extends AppCompatActivity {
 
     ImageView applogo;
     TextView edit;
+    View listings, listing1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,25 @@ public class profilePageTenant extends AppCompatActivity {
             }
         });
 
+        listings = findViewById(R.id.rectangleListings);
+        listings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), profilePageSeller.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        listing1 = findViewById(R.id.image1);
+        listing1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), specificListingPage.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override

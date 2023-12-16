@@ -10,8 +10,7 @@ import android.widget.Toast;
 
 public class UpdatedFavList extends AppCompatActivity {
 
-    ImageView applogo;
-    ImageView listing1, listing2, bookmark1, bookmark2;
+    ImageView applogo, listing1, bookmark1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +26,18 @@ public class UpdatedFavList extends AppCompatActivity {
                 finish();
             }
         });
+
+        bookmark1 = findViewById(R.id.bookmark2);
+        bookmark1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(UpdatedFavList.this, "Listing removed from saved list.", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), EmptySavedList.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
     }
 }

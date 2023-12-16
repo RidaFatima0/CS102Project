@@ -8,14 +8,26 @@
         android:label="FirebaseAuthentication"
         android:theme="@style/Theme.Material3.Light">
         <activity
-            android:name=".filter"
-            android:exported="false" />
+            android:name=".editListing"
+            android:exported="true" />
+        <activity
+            android:name=".EmptySavedList"
+            android:exported="true" />
+        <activity
+            android:name=".konyaSearchMainMenu"
+            android:exported="true" />
+        <activity
+            android:name=".FilterLoggedIn"
+            android:exported="true" />
+        <activity
+            android:name=".MainMenuSearchedLoggedIn"
+            android:exported="true" />
         <activity
             android:name=".mainMenuSearched"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UpdatedFavList"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".welcomeScreen"
             android:exported="true">
@@ -51,7 +63,15 @@
         </activity>
         <activity
             android:name=".mainMenuLoggedIn"
-            android:exported="false"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".filter"
+            android:exported="true"
             android:theme="@style/Theme.Material3.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

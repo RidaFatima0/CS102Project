@@ -144,16 +144,65 @@ public class signUp extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(signUp.this, "Account created.", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
-                                    startActivity(intent);
-                                    finish();
+                                    String userId = mAuth.getCurrentUser().getUid();
+                                    mDatabase.child("User").child(userId).setValue(user)
+                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                public void onComplete(@NonNull Task<Void> task) {
+                                                    if (task.isSuccessful()) {
+                                                        Toast.makeText(signUp.this, "User data saved.", Toast.LENGTH_SHORT).show();
+                                                        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+                                                        startActivity(intent);
+                                                        finish();
+                                                    } else {
+                                                        Toast.makeText(signUp.this, "Failed to save user data.", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }
+                                            });
                                 } else {
                                     Toast.makeText(signUp.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
             }
-        });
+            });
+//        buttonSignup.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String email, password, firstName, lastName, phoneNumber;
+//                email = String.valueOf(editTextEmail.getText());
+//                password = String.valueOf(editTextPassword.getText());
+//                firstName = String.valueOf(editfirstName.getText());
+//                lastName = String.valueOf(editLastName.getText());
+//                phoneNumber = String.valueOf(editPhoneNumber.getText());
+//
+//                if (!password.equals(String.valueOf(editConfirmPassword.getText()))) {
+//                    Toast.makeText(signUp.this, "Passwords do not match.", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//
+//                UserData user = new UserData(firstName, lastName, email, phoneNumber, password, imageURL);
+//
+//                mDatabase.child("User").child(firstName).setValue(user);
+//
+//                //saveData();
+//
+//                mAuth.createUserWithEmailAndPassword(email, password)
+//                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<AuthResult> task) {
+//                                if (task.isSuccessful()) {
+//                                    Toast.makeText(signUp.this, "Account created.", Toast.LENGTH_SHORT).show();
+//                                    Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+//                                    startActivity(intent);
+//                                    finish();
+//                                } else {
+//                                    Toast.makeText(signUp.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+//                                }
+//                            }
+//                        });
+//            }
+//        });
+
     }
 
     public void saveData(){

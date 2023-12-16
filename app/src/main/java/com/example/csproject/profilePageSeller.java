@@ -73,7 +73,7 @@ public class profilePageSeller extends AppCompatActivity {
         editrented1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), createNewListing.class);
+                Intent intent = new Intent(getApplicationContext(), editListing.class);
                 startActivity(intent);
                 finish();
             }
@@ -83,13 +83,13 @@ public class profilePageSeller extends AppCompatActivity {
         editrented2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), createNewListing.class);
+                Intent intent = new Intent(getApplicationContext(), editListing.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        newlisting = findViewById(R.id.profilepic);
+        newlisting = findViewById(R.id.plussign);
         newlisting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

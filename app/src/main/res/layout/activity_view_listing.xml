@@ -1,4 +1,11 @@
-<RelativeLayout
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+    <ScrollView android:id="@+id/specificlistingpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/loadingscre"
@@ -45,38 +52,35 @@
     </RelativeLayout>
 
     <RelativeLayout android:id="@+id/presentat_on_bubbles"
-        android:layout_marginTop="338dp"
+        android:layout_marginTop="344dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
 
-        <View
-            android:id="@+id/ellipse_1"
-            android:background="@drawable/ellipse_1_shape"
+        <View   android:id="@+id/radiobutton1"
+            android:background="@color/ellipse_3_color"
             android:layout_marginStart="-1dp"
             android:layout_marginTop="-1dp"
             android:layout_width="13dp"
             android:layout_height="13dp" />
 
-        <View
-            android:id="@+id/ellipse_2"
-            android:background="@drawable/ellipse_1_shape"
+        <View   android:id="@+id/radiobutton2"
+            android:background="@color/black"
             android:layout_marginStart="29dp"
             android:layout_marginTop="-1dp"
             android:layout_width="13dp"
             android:layout_height="13dp" />
 
-        <View
-            android:id="@+id/ellipse_3"
-            android:background="@drawable/ellipse_3_shape"
+        <View   android:id="@+id/radiobutton3"
+            android:background="@color/black"
             android:layout_marginStart="59dp"
             android:layout_marginTop="-1dp"
             android:layout_width="13dp"
             android:layout_height="13dp" />
 
-        <View   android:id="@+id/ellipse_4"
-            android:background="@drawable/ellipse_4_shape"
+        <View   android:id="@+id/radiobutton4"
+            android:background="@color/black"
             android:layout_marginStart="84dp"
             android:layout_marginTop="-1dp"
             android:layout_width="13dp"
@@ -84,7 +88,7 @@
 
     </RelativeLayout>
 
-    <ImageView android:id="@+id/landImage"
+    <ImageView android:id="@+id/displayimage"
         android:src="@drawable/image2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="129dp"
@@ -123,6 +127,12 @@
         />
 
 
+    <RelativeLayout
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
     <ImageView android:id="@+id/line_1"
         android:src="@drawable/line_1"
         android:contentDescription="line_1"
@@ -191,7 +201,7 @@
         android:src="@drawable/line_5"
         android:contentDescription="line_5"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="645dp"
+        android:layout_marginTop="643dp"
         android:layout_width="360dp"
         android:layout_height="1dp" />
 
@@ -200,25 +210,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="662dp"
+        android:layout_marginTop="652dp"
         android:text="Rented By"
         android:textColor="#009688"
         android:textStyle="bold"/>
-
 
     <ImageView
         android:id="@+id/renterImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="690dp"
+        android:layout_marginTop="680dp"
         app:srcCompat="@drawable/adam2" />
 
     <TextView android:id="@+id/renterLocation"
         android:textSize="14sp"
         android:textColor="@color/_16_300_tl_year_color"
         android:layout_marginLeft="125dp"
-        android:layout_marginTop="720dp"
+        android:layout_marginTop="710dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ankara"
@@ -229,7 +238,7 @@
         android:textSize="14sp"
         android:textColor="@color/_bg__navbar_ek1_color"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="695dp"
+        android:layout_marginTop="685dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name: Fatih Cetin"
@@ -238,15 +247,18 @@
     <ImageView android:id="@+id/renterloc"
         android:src="@drawable/location"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="720dp"
+        android:layout_marginTop="710dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView android:id="@+id/line6"
         android:src="@drawable/line_5"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="765dp"
+        android:layout_marginTop="750dp"
         android:layout_width="360dp"
         android:layout_height="1dp" />
+    </RelativeLayout>
 
 </RelativeLayout>
+    </ScrollView>
+</HorizontalScrollView>

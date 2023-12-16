@@ -20,7 +20,7 @@
                 <View
                     android:id="@+id/_bg__specificlistingpage_ek2"
                     android:layout_width="400dp"
-                    android:layout_height="850dp"
+                    android:layout_height="830dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/_bg__specificlistingpage_ek2_shape" />
@@ -116,6 +116,36 @@
                         android:src="@drawable/vector_ek11" />
 
                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/elements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="40dp">
+
+                    <View
+                        android:id="@+id/requestsellercontactbutton"
+                        android:layout_width="253dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="68dp"
+                        android:layout_marginTop="742dp"
+                        android:background="@drawable/rectangle_10_shape" />
+
+                    <TextView
+                        android:id="@+id/requestsellercontacttextview"
+                        android:layout_width="218.4dp"
+                        android:layout_height="25.37dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginTop="750dp"
+                        android:gravity="center"
+                        android:text="@string/request_seller_contact_string"
+                        android:textColor="@color/_bg__specificlistingpage_ek2_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
             </RelativeLayout>
 
 
@@ -126,7 +156,7 @@
                 android:layout_height="wrap_content"
                 >
 
-                <ImageView android:id="@+id/image1"
+                <ImageView android:id="@+id/displayimage"
                     android:src="@drawable/image11"
                     android:contentDescription="image11"
                     android:layout_marginStart="0dp"
@@ -142,43 +172,35 @@
                     android:layout_height="wrap_content"
                     >
 
-                    <View   android:id="@+id/ellipse_1"
-                        android:background="@drawable/ellipse_3_shape"
+                    <View   android:id="@+id/radiobutton1"
+                        android:background="@color/ellipse_3_color"
                         android:layout_marginStart="-1dp"
                         android:layout_marginTop="-1dp"
                         android:layout_width="13dp"
                         android:layout_height="13dp" />
 
-                    <View   android:id="@+id/ellipse_2"
-                        android:background="@drawable/ellipse_1_shape"
+                    <View   android:id="@+id/radiobutton2"
+                        android:background="@color/black"
                         android:layout_marginStart="29dp"
                         android:layout_marginTop="-1dp"
                         android:layout_width="13dp"
                         android:layout_height="13dp" />
 
-                    <View   android:id="@+id/ellipse_3"
-                        android:background="@drawable/ellipse_1_shape"
+                    <View   android:id="@+id/radiobutton3"
+                        android:background="@color/black"
                         android:layout_marginStart="59dp"
                         android:layout_marginTop="-1dp"
                         android:layout_width="13dp"
                         android:layout_height="13dp" />
 
-                    <View   android:id="@+id/ellipse_4"
-                        android:background="@drawable/ellipse_4_shape"
+                    <View   android:id="@+id/radiobutton4"
+                        android:background="@color/black"
                         android:layout_marginStart="84dp"
                         android:layout_marginTop="-1dp"
                         android:layout_width="13dp"
                         android:layout_height="13dp" />
 
                 </RelativeLayout>
-
-                <View
-                    android:id="@+id/ellipse_7"
-                    android:layout_width="9dp"
-                    android:layout_height="10dp"
-                    android:layout_marginStart="334dp"
-                    android:layout_marginTop="51dp"
-                    android:background="@drawable/ellipse_7_shape" />
 
             </RelativeLayout>
 
@@ -219,13 +241,11 @@
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
-
-
             <ImageView android:id="@+id/line_5"
                 android:src="@drawable/line_5"
                 android:contentDescription="line_5"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="614dp"
+                android:layout_marginTop="594dp"
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
@@ -251,14 +271,14 @@
                 android:textSize="11sp"
                 android:textColor="@color/_bg__navbar_ek1_color"
                 android:layout_marginLeft="24dp"
-                android:layout_marginTop="629dp"
+                android:layout_marginTop="609dp"
                 android:layout_width="346.1dp"
                 android:layout_height="24.1dp"
                 android:text="@string/financial_calculation__determine_whether_you_can_afford_this_land__string"
                 />
 
             <RelativeLayout android:id="@+id/login_button_ek2"
-                android:layout_marginTop="662dp"
+                android:layout_marginTop="640dp"
                 android:layout_marginStart="200dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -290,14 +310,14 @@
                     android:textSize="14sp"
                     android:textColor="@color/_bg__specificlistingpage_ek2_color"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="710dp"
+                    android:layout_marginTop="690dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Result    "
                     />
 
             <RelativeLayout android:id="@+id/e_mail_textbox"
-                android:layout_marginTop="656dp"
+                android:layout_marginTop="635dp"
                 android:layout_marginStart="27dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -329,12 +349,12 @@
                 android:src="@drawable/line_3"
                 android:contentDescription="line_3"
                 android:layout_marginStart="11dp"
-                android:layout_marginTop="734dp"
+                android:layout_marginTop="714dp"
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
             <RelativeLayout android:id="@+id/login_button_ek4"
-                android:layout_marginTop="741dp"
+                android:layout_marginTop="730dp"
                 android:layout_marginStart="67dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -358,36 +378,6 @@
                     android:layout_height="26.97dp"
                     android:text="@string/rent_string"
                     />
-            </RelativeLayout>
-
-            <RelativeLayout android:id="@+id/elements"
-                android:layout_marginTop="50dp"
-                android:layout_marginStart="0dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-                <View
-                    android:id="@+id/requestsellercontactbutton"
-                    android:layout_width="253dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="68dp"
-                    android:layout_marginTop="742dp"
-                    android:background="@drawable/rectangle_10_shape" />
-
-                <TextView android:id="@+id/requestsellercontacttextview"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal|center"
-                    android:gravity="center"
-                    android:textSize="14sp"
-                    android:textColor="@color/_bg__specificlistingpage_ek2_color"
-                    android:layout_marginStart="85dp"
-                    android:layout_marginTop="750dp"
-                    android:layout_width="218.4dp"
-                    android:layout_height="25.37dp"
-                    android:text="@string/request_seller_contact_string"
-                    />
-
             </RelativeLayout>
 
         </RelativeLayout>

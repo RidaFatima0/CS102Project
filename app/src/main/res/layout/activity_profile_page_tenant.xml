@@ -161,7 +161,7 @@
 
 
         <View
-            android:id="@+id/rectangle"
+            android:id="@+id/rectangleListings"
             android:layout_width="205dp"
             android:layout_height="37dp"
             android:layout_alignParentLeft="true"

@@ -5,17 +5,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <RelativeLayout android:id="@+id/content_container"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
-            <RelativeLayout android:id="@+id/page_specificlistingpage_ek1"
+            <RelativeLayout
                 android:layout_marginTop="0dp"
                 android:layout_marginStart="0dp"
-                android:layout_width="400dp"
+                android:layout_width="wrap_content"
                 android:layout_height="860dp"
                 >
-
 
                 <RelativeLayout android:id="@+id/navbar"
                     android:layout_marginTop="0dp"
@@ -23,7 +22,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     >
-
 
                     <View
                         android:id="@+id/rectangle_1"
@@ -80,9 +78,7 @@
                         android:textSize="16dp"
                         android:text="Login/Signup"/>
 
-
                 </RelativeLayout>
-
 
                 <RelativeLayout android:id="@+id/photo_group"
                     android:layout_marginTop="129dp"
@@ -91,7 +87,7 @@
                     android:layout_height="wrap_content"
                     >
 
-                    <ImageView android:id="@+id/image2"
+                    <ImageView android:id="@+id/displayimage"
                         android:src="@drawable/image2"
                         android:contentDescription="image_1"
                         android:layout_marginStart="0dp"
@@ -100,7 +96,7 @@
                         android:layout_height="211dp" />
 
                     <TextView
-                        android:id="@+id/textView1"
+                        android:id="@+id/imagetext1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="60dp"
@@ -112,7 +108,7 @@
                         android:text="Your Planet"/>
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/imagetext2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="60dp"
@@ -123,7 +119,7 @@
                         android:textColorHighlight="@color/white"
                         android:text="Your Future"/>
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/imagetext3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="55dp"
@@ -141,33 +137,35 @@
                         android:layout_height="wrap_content"
                         >
 
-                        <View   android:id="@+id/ellipse_1"
-                            android:background="@drawable/ellipse_1_shape"
+
+                        <View   android:id="@+id/radiobutton1"
+                            android:background="@color/ellipse_3_color"
                             android:layout_marginStart="-1dp"
                             android:layout_marginTop="-1dp"
                             android:layout_width="13dp"
                             android:layout_height="13dp" />
 
-                        <View   android:id="@+id/ellipse_2"
-                            android:background="@drawable/ellipse_1_shape"
+                        <View   android:id="@+id/radiobutton2"
+                            android:background="@color/black"
                             android:layout_marginStart="29dp"
                             android:layout_marginTop="-1dp"
                             android:layout_width="13dp"
                             android:layout_height="13dp" />
 
-                        <View   android:id="@+id/ellipse_3"
-                            android:background="@drawable/ellipse_3_shape"
+                        <View   android:id="@+id/radiobutton3"
+                            android:background="@color/black"
                             android:layout_marginStart="59dp"
                             android:layout_marginTop="-1dp"
                             android:layout_width="13dp"
                             android:layout_height="13dp" />
 
-                        <View   android:id="@+id/ellipse_4"
-                            android:background="@drawable/ellipse_4_shape"
+                        <View   android:id="@+id/radiobutton4"
+                            android:background="@color/black"
                             android:layout_marginStart="84dp"
                             android:layout_marginTop="-1dp"
                             android:layout_width="13dp"
                             android:layout_height="13dp" />
+
 
                     </RelativeLayout>
 
@@ -198,6 +196,16 @@
                         android:layout_marginTop="375.62dp"
                         android:background="@drawable/image11"
                         />
+
+                    <ImageView
+                        android:id="@+id/bookmark1"
+                        android:layout_width="18dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="149dp"
+                        android:layout_marginTop="472dp"
+                        android:layout_marginRight="231dp"
+                        android:layout_marginBottom="342dp"
+                        android:background="@drawable/bookmark" />
 
                     <View
                         android:id="@+id/star10"
@@ -239,7 +247,8 @@
                         android:id="@+id/listing1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="60dp"
                         android:layout_marginTop="465dp"
                         android:text="Ankara/Ayas" />
 
@@ -247,7 +256,7 @@
                         android:id="@+id/listing1price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="65dp"
+                        android:layout_marginLeft="55dp"
                         android:layout_marginTop="485dp"
                         android:text="16300TL/month"
                         android:textColor="@color/_16_300_tl_year_color"
@@ -258,7 +267,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="180dp"
-                        android:layout_marginTop="-341dp">
+                        android:layout_marginTop="-340dp">
 
                     <View
                         android:id="@+id/rectangle5"
@@ -279,11 +288,21 @@
                         android:background="@drawable/image5"
                         tools:ignore="DuplicateIds" />
 
+                    <ImageView
+                        android:id="@+id/bookmark5"
+                        android:layout_width="18dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="149dp"
+                        android:layout_marginTop="812dp"
+                        android:layout_marginBottom="342dp"
+                        android:background="@drawable/bookmark" />
+
                     <TextView
                         android:id="@+id/listing5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="60dp"
                         android:layout_marginTop="810dp"
                         android:gravity="center_horizontal|top"
                         android:text="Ankara/Ayas" />
@@ -292,14 +311,13 @@
                         android:id="@+id/listing5price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="70dp"
+                        android:layout_marginLeft="60dp"
                         android:layout_marginTop="827dp"
                         android:text="8000TL/month"
                         android:textColor="@color/_16_300_tl_year_color"
                         android:textSize="12dp"
                         android:textStyle="bold" />
                 </RelativeLayout>
-
                 </RelativeLayout>
 
             </RelativeLayout>

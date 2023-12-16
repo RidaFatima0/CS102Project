@@ -1,9 +1,277 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".filter">
+    android:id="@+id/loadingscre"
+    android:layout_width="450dp"
+    android:layout_height="850dp"
+    android:clipToOutline="true"
+    android:background="#D3D3D3"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@+id/navbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_1_shape" />
+
+        <ImageView
+            android:id="@+id/filtericon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="45dp"
+            android:contentDescription="tune"
+            android:src="@drawable/tune" />
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="applogo"
+            android:src="@drawable/applogo" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/border"
+            android:ems="6"
+            android:inputType="text"
+            android:hint="  Search"
+            android:textColor="#808080"/>
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="213dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="vector_ek12"
+            android:src="@drawable/vector_ek12" />
+
+        <TextView
+            android:id="@+id/loginoptionbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="48dp"
+            android:textSize="16dp"
+            android:text="Login/Signup"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="-30dp"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingClass">
+
+        <ImageView
+            android:id="@+id/closebutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="66dp"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="150dp"
+            android:text="Select Location: "
+            android:textStyle="bold"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/border"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="230dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="245dp"
+            android:text="Rent Price (TL/Year): "
+            android:textStyle="bold" />
+
+
+        <SeekBar
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="281dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="304dp"
+            android:text="2000                       35000                    500000"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="351dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="376dp"
+            android:text="Size (Acre): "
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="414dp" />
+
+        <TextView
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="432dp"
+            android:text="0.5                            20                               100"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="468dp"
+            android:layout_marginEnd="3dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="482dp"
+        android:text="Usage Conditions "
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="511dp"
+        android:text="Agriculture" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="540dp"
+        android:text="Housing" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="570dp"
+        android:text="Farming" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="600dp"
+        android:text="Beekeeping" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="630dp"
+        android:text="Other" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="218dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/rbutton"
+        android:textSize="20dp"
+        android:text="Clear"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/applyfilterbutton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="680dp"
+        android:textSize="16dp"
+        android:background="@drawable/rbutton"
+        android:text="Apply Filter"
+        android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -70,39 +70,46 @@ public class editProfile extends AppCompatActivity {
         savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String getFirstName = firstName.getText().toString().trim();
-                final String getLastName = lastName.getText().toString().trim();
-                final String getEmail = email.getText().toString().trim();
-                final String getPhoneNumber = phoneNumber.getText().toString().trim();
-                final String getPassword = password.getText().toString().trim();
-
-                if (getFirstName.isEmpty() || getLastName.isEmpty() || getEmail.isEmpty() || getPhoneNumber.isEmpty() || getPassword.isEmpty()) {
-                    Toast.makeText(editProfile.this, "All fields are required", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                HashMap<String, Object> userData = new HashMap<>();
-                userData.put("first name", getFirstName);
-                userData.put("last name", getLastName);
-                userData.put("email", getEmail);
-                userData.put("phone number", getPhoneNumber);
-                userData.put("password", getPassword);
-
-                FirebaseFirestore.getInstance().collection("User").document("UserData")
-                        .set(userData)
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                Toast.makeText(editProfile.this, "Data Saved Successfully.", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(editProfile.this, "Failed to save data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                savebutton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(editProfile.this, "Button Clicked", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
+//                final String getFirstName = firstName.getText().toString().trim();
+//                final String getLastName = lastName.getText().toString().trim();
+//                final String getEmail = email.getText().toString().trim();
+//                final String getPhoneNumber = phoneNumber.getText().toString().trim();
+//                final String getPassword = password.getText().toString().trim();
+//
+//                if (getFirstName.isEmpty() || getLastName.isEmpty() || getEmail.isEmpty() || getPhoneNumber.isEmpty() || getPassword.isEmpty()) {
+//                    Toast.makeText(editProfile.this, "All fields are required", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//
+//                HashMap<String, Object> userData = new HashMap<>();
+//                userData.put("first name", getFirstName);
+//                userData.put("last name", getLastName);
+//                userData.put("email", getEmail);
+//                userData.put("phone number", getPhoneNumber);
+//                userData.put("password", getPassword);
+//
+//                FirebaseFirestore.getInstance().collection("User").document("UserData")
+//                        .set(userData)
+//                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+//                            @Override
+//                            public void onSuccess(Void aVoid) {
+//                                Toast.makeText(editProfile.this, "Data Saved Successfully.", Toast.LENGTH_SHORT).show();
+//                            }
+//                        })
+//                        .addOnFailureListener(new OnFailureListener() {
+//                            @Override
+//                            public void onFailure(@NonNull Exception e) {
+//                                Toast.makeText(editProfile.this, "Failed to save data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+//                            }
+//                        });
+//            }
         });
 
 //        savebutton = findViewById(R.id.savebutton);

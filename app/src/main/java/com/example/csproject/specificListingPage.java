@@ -2,21 +2,24 @@ package com.example.csproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
-public class specificListingPage extends AppCompatActivity {
+public class specificListingPage extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
-    View calculate;
+    View calculate,  radiobutton1, radiobutton2, radiobutton3, radiobutton4;;
     EditText monthlyincometextbox;
     TextView resultoutput, renttextview, requestcontact, landownerName;
-    ImageView applogo, notification;
+    ImageView applogo, notification, displayimage, profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +90,98 @@ public class specificListingPage extends AppCompatActivity {
             }
         });
 
+        displayimage = findViewById(R.id.displayimage);
+        radiobutton1 = findViewById(R.id.radiobutton1);
+        radiobutton2 = findViewById(R.id.radiobutton2);
+        radiobutton3 = findViewById(R.id.radiobutton3);
+        radiobutton4 = findViewById(R.id.radiobutton4);
+
+        radiobutton1.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceType")
+            @Override
+            public void onClick(View view) {
+                radiobutton1.setBackgroundColor(Color.rgb(87,160,0));
+                radiobutton2.setBackgroundColor(Color.BLACK);
+                radiobutton3.setBackgroundColor(Color.BLACK);
+                radiobutton4.setBackgroundColor(Color.BLACK);
+                displayimage.setImageResource(R.drawable.image1);
+            }
+        });
+
+        radiobutton2.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceType")
+            @Override
+            public void onClick(View view) {
+                radiobutton2.setBackgroundColor(Color.rgb(87,160,0));
+                radiobutton1.setBackgroundColor(Color.BLACK);
+                radiobutton3.setBackgroundColor(Color.BLACK);
+                radiobutton4.setBackgroundColor(Color.BLACK);
+                displayimage.setImageResource(R.drawable.image6);
+            }
+        });
+
+        radiobutton3.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceType")
+            @Override
+            public void onClick(View view) {
+                radiobutton3.setBackgroundColor(Color.rgb(87,160,0));
+                radiobutton1.setBackgroundColor(Color.BLACK);
+                radiobutton2.setBackgroundColor(Color.BLACK);
+                radiobutton4.setBackgroundColor(Color.BLACK);
+                displayimage.setImageResource(R.drawable.image4);
+            }
+        });
+
+        radiobutton4.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceType")
+            @Override
+            public void onClick(View view) {
+                radiobutton4.setBackgroundColor(Color.rgb(87,160,0));
+                radiobutton1.setBackgroundColor(Color.BLACK);
+                radiobutton2.setBackgroundColor(Color.BLACK);
+                radiobutton3.setBackgroundColor(Color.BLACK);
+                displayimage.setImageResource(R.drawable.image5);
+            }
+        });
+
+        profile = findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu popup = new PopupMenu(specificListingPage.this, profile);
+                popup.setOnMenuItemClickListener(specificListingPage.this);
+                popup.inflate(R.menu.popup_menu);
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        if (menuItem.getTitle().equals("\uD83C\uDFE0 Home")){
+                            Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if (menuItem.getTitle().equals("\uD83D\uDC64 Profile")){
+                            Intent intent = new Intent(getApplicationContext(), profilePageSeller.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if (menuItem.getTitle().equals("★ Saved")){
+                            Intent intent = new Intent(getApplicationContext(), favList.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else if (menuItem.getTitle().equals("⍇ Log Out")){
+                            Intent intent = new Intent(getApplicationContext(), login.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        return false;
+                    }
+                });
+                popup.show();
+            }
+        });
+
+
     }
 
     @Override
@@ -95,5 +190,10 @@ public class specificListingPage extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem menuItem) {
+        return false;
     }
 }
