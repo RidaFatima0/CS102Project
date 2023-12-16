@@ -1,11 +1,18 @@
 package com.example.csproject;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -20,14 +27,18 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class signUp extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword, editfirstName, editLastName, editPhoneNumber, editConfirmPassword;
     Button buttonSignup;
+    ImageView uploadImage;
+    String imageURL;
+    Uri uri;
     FirebaseAuth mAuth;
-    TextView textView;
-
+    TextView logininstead;
     ImageView applogo;
 
 //    @Override
@@ -47,12 +58,37 @@ public class signUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         mAuth = FirebaseAuth.getInstance();
+
         editTextEmail = findViewById(R.id.emailtextbox);
         editTextPassword = findViewById(R.id.passwordtextbox);
         editfirstName = findViewById(R.id.firstNametextbox);
         editLastName = findViewById(R.id.lastNametextbox);
         editPhoneNumber = findViewById(R.id.phoneNumbertextbox);
         editConfirmPassword = findViewById(R.id.confirmPasswordtextbox);
+        uploadImage = findViewById(R.id.uploadimageButton);
+
+        ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if (result.getResultCode() == Activity.RESULT_OK){
+                    Intent data = result.getData();
+                    uri = data.getData();
+                    uploadImage.setImageURI(uri);
+                }
+                else{
+                    Toast.makeText(signUp.this, "No image selected", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        uploadImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent photoPicker = new Intent(Intent.ACTION_PICK);
+                photoPicker.setType("image/*");
+                activityResultLauncher.launch(photoPicker);
+            }
+        });
 
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {
@@ -66,8 +102,8 @@ public class signUp extends AppCompatActivity {
 
         buttonSignup = findViewById(R.id.signuppagesinupbutton);
 
-        textView = findViewById(R.id.logininstead);
-        textView.setOnClickListener(new View.OnClickListener() {
+        logininstead = findViewById(R.id.logininstead);
+        logininstead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), login.class);
@@ -79,6 +115,9 @@ public class signUp extends AppCompatActivity {
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                StorageReference storageReference = FirebaseStorage.getInstance().getReference();
+                
+
                 String email, password, firstName, lastName, phoneNumber;
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());

@@ -7,9 +7,6 @@ public class Listing {
     private int rent;
     private Image image1,image2,image3,image4;
 
-    public Listing() {
-    }
-
     public Listing(String condition, String description, String location, String listId, int rent, Image image1, Image image2, Image image3, Image image4) {
         this.condition = condition;
         this.description = description;
