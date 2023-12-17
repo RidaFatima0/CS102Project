@@ -19,7 +19,10 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -54,8 +57,6 @@ public class editProfile extends AppCompatActivity {
         phoneNumber = findViewById(R.id.phoneNumbertextbox);
         password = findViewById(R.id.passwordtextbox);
 
-
-
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,16 +68,53 @@ public class editProfile extends AppCompatActivity {
         });
 
         savebutton = findViewById(R.id.savebutton);
+        savebutton = findViewById(R.id.savebutton);
         savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                savebutton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(editProfile.this, "Button Clicked", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                String getFirstName = firstName.getText().toString();
+                String getLastName = lastName.getText().toString();
+                String getEmail = email.getText().toString();
+                String getPhoneNumber = phoneNumber.getText().toString();
+                String getPassword = password.getText().toString();
+
+                HashMap<String, Object> hashMap = new HashMap<>();
+                hashMap.put("first name", getFirstName);
+                hashMap.put("last name", getLastName);
+                hashMap.put("email", getEmail);
+                hashMap.put("phone number", getPhoneNumber);
+                hashMap.put("password", getPassword);
+
+                FirebaseAuth auth = FirebaseAuth.getInstance();
+                FirebaseUser currentUser = auth.getCurrentUser();
+
+                if (currentUser != null) {
+                    String userId = currentUser.getUid();
+
+                    FirebaseFirestore.getInstance().collection("users")
+                            .document(userId)
+                            .update(hashMap)
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Toast.makeText(editProfile.this, "Data Updated Successfully.", Toast.LENGTH_SHORT).show();
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(editProfile.this, "Failed to update data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                } else {
+                    Toast.makeText(editProfile.this, "User not signed in.", Toast.LENGTH_SHORT).show();
+                }
+
+                Intent intent = new Intent(getApplicationContext(), profilePageSeller.class);
+                startActivity(intent);
+                finish();
             }
+        });
 //                final String getFirstName = firstName.getText().toString().trim();
 //                final String getLastName = lastName.getText().toString().trim();
 //                final String getEmail = email.getText().toString().trim();
@@ -110,8 +148,6 @@ public class editProfile extends AppCompatActivity {
 //                            }
 //                        });
 //            }
-        });
-
 //        savebutton = findViewById(R.id.savebutton);
 //        savebutton.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -147,7 +183,7 @@ public class editProfile extends AppCompatActivity {
 //            }
 //        });
 
-        profilepic = findViewById(R.id.profilepic);
+    profilepic = findViewById(R.id.profilepic);
         editProfilePicOption = findViewById(R.id.editprofilepic);
         editProfilePicOption.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -206,7 +242,7 @@ public class editProfile extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+        Intent intent = new Intent(getApplicationContext(), profilePageSeller.class);
         startActivity(intent);
         finish();
     }

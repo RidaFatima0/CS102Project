@@ -23,7 +23,7 @@ public class specificListingPage2 extends AppCompatActivity implements PopupMenu
     View calculate,  radiobutton1, radiobutton2, radiobutton3, radiobutton4;;
     FirebaseAuth mAuth;
     EditText monthlyincometextbox;
-    TextView resultoutput, renttextview, requestcontact, landownerName;
+    TextView resultoutput, renttextview, requestcontact, landownerName, description;
     ImageView applogo, notification, displayimage, profile;
 
     @Override
@@ -73,6 +73,14 @@ public class specificListingPage2 extends AppCompatActivity implements PopupMenu
                 Intent intent = new Intent(getApplicationContext(), viewSellerProfile.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        description = findViewById(R.id.description);
+        description.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                description.setText("Description: Tenant must utilize the land for agriculture purposes. This will ensure that the land is used properly.");
             }
         });
 

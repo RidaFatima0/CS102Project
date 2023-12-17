@@ -59,6 +59,4 @@ public class notifications extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
-
 }

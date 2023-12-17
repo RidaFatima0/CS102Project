@@ -62,4 +62,12 @@ public class filter extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+        startActivity(intent);
+        finish();
+    }
 }

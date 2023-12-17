@@ -56,14 +56,12 @@
                     android:text="7500TL/Year"
                     />
 
-
                 <RelativeLayout android:id="@+id/navbar"
                     android:layout_marginTop="0dp"
                     android:layout_marginStart="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     >
-
 
                     <View
                         android:id="@+id/rectangle_1"
@@ -194,14 +192,6 @@
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
-            <ImageView android:id="@+id/line_5"
-                android:src="@drawable/line_5"
-                android:contentDescription="line_5"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="614dp"
-                android:layout_width="360dp"
-                android:layout_height="1dp" />
-
             <ImageView android:id="@+id/line_4"
                 android:src="@drawable/line_4"
                 android:contentDescription="line_4"
@@ -210,7 +200,7 @@
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
-            <TextView android:id="@+id/description__tenant_must_utilize_the_land_for_agriculture_purpose___see_more___"
+            <TextView android:id="@+id/description"
                 android:textSize="13sp"
                 android:textColor="@color/_bg__navbar_ek1_color"
                 android:layout_marginLeft="27dp"
@@ -219,6 +209,20 @@
                 android:layout_height="65.3dp"
                 android:text="@string/description__tenant_must_utilize_the_land_for_agriculture_purpose___see_more____string"
                 />
+        <RelativeLayout
+            android:layout_marginTop="-20dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView android:id="@+id/line_5"
+                android:src="@drawable/line_5"
+                android:contentDescription="line_5"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="614dp"
+                android:layout_width="360dp"
+                android:layout_height="1dp" />
 
             <TextView android:id="@+id/financial_calculation__determine_whether_you_can_afford_this_land_"
                 android:textSize="11sp"
@@ -297,7 +301,7 @@
                     android:textSize="12sp" />
 
             </RelativeLayout>
-
+        </RelativeLayout>
 
         </RelativeLayout>
 

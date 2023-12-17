@@ -98,6 +98,7 @@ public class profilePageSeller extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
     @Override

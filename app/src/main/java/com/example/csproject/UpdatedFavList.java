@@ -37,7 +37,12 @@ public class UpdatedFavList extends AppCompatActivity {
                 finish();
             }
         });
-
-
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+        startActivity(intent);
+        finish();
     }
 }

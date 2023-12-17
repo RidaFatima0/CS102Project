@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class specificListingPageLoggedOut extends AppCompatActivity {
 
     TextView login;
-    TextView loginbutton, calculate, resultoutput;
+    TextView loginbutton, calculate, resultoutput, description;
     EditText monthlyincometextbox;
     ImageView displayimage, applogo;
     View radiobutton1, radiobutton2, radiobutton3, radiobutton4;
@@ -61,6 +61,13 @@ public class specificListingPageLoggedOut extends AppCompatActivity {
             }
         });
 
+        description = findViewById(R.id.description);
+        description.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                description.setText("Description: Tenant must utilize the land for agriculture purposes. This will ensure that the land is used properly.");
+            }
+        });
 
         displayimage = findViewById(R.id.displayimage);
         radiobutton1 = findViewById(R.id.radiobutton1);
@@ -115,5 +122,12 @@ public class specificListingPageLoggedOut extends AppCompatActivity {
                 displayimage.setImageResource(R.drawable.image5);
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), mainMenu.class);
+        startActivity(intent);
+        finish();
     }
 }

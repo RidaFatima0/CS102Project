@@ -127,7 +127,7 @@
             android:text="Select Location: "
             android:textStyle="bold"/>
 
-        <com.google.android.gms.maps.MapView
+        <EditText
             android:id="@+id/mapView"
             android:layout_width="175dp"
             android:layout_height="30dp"
@@ -238,7 +238,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonagriculture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"

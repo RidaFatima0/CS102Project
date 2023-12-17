@@ -5,8 +5,18 @@
 
     <application
         android:allowBackup="true"
-        android:label="FirebaseAuthentication"
+        android:icon="@drawable/appicon"
+        android:label="A Green Deal"
         android:theme="@style/Theme.Material3.Light">
+        <activity
+            android:name=".Agriculturemainmenu"
+            android:exported="false" />
+        <activity
+            android:name=".mainMenuLoggedInNewListing"
+            android:exported="false" />
+        <activity
+            android:name=".profilepageSellerEdited"
+            android:exported="true" />
         <activity
             android:name=".editListing"
             android:exported="true" />

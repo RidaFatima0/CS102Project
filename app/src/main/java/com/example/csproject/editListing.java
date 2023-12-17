@@ -116,7 +116,7 @@ public class editListing extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+        Intent intent = new Intent(getApplicationContext(), profilePageSeller.class);
         startActivity(intent);
         finish();
     }

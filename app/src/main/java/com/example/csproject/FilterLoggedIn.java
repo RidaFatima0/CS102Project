@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.RadioButton;
 
 public class FilterLoggedIn extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     ImageView closebutton, profile;
     Button clear, applyFilter;
+    RadioButton agriculture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +42,16 @@ public class FilterLoggedIn extends AppCompatActivity implements PopupMenu.OnMen
             }
         });
 
+        agriculture = findViewById(R.id.radioButtonagriculture);
         applyFilter = findViewById(R.id.applyfilterbutton);
         applyFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
-                startActivity(intent);
-                finish();
+                if (agriculture.isChecked()){
+                    Intent intent = new Intent(getApplicationContext(), Agriculturemainmenu.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
 
@@ -92,5 +97,13 @@ public class FilterLoggedIn extends AppCompatActivity implements PopupMenu.OnMen
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
         return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+        startActivity(intent);
+        finish();
     }
 }

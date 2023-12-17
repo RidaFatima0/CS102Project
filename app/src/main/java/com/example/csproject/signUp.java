@@ -28,9 +28,13 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class signUp extends AppCompatActivity {
 
@@ -75,13 +79,12 @@ public class signUp extends AppCompatActivity {
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
             @Override
             public void onActivityResult(ActivityResult result) {
-                if (result.getResultCode() == Activity.RESULT_OK){
+                if (result.getResultCode() == Activity.RESULT_OK) {
                     Intent data = result.getData();
                     uri = data.getData();
                     uploadImage.setImageURI(uri);
                     imageURL = uri.toString();
-                }
-                else{
+                } else {
                     Toast.makeText(signUp.this, "No image selected", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -132,39 +135,49 @@ public class signUp extends AppCompatActivity {
                     return;
                 }
 
-                UserData user = new UserData(firstName, lastName, email, phoneNumber, password, imageURL);
-
-                mDatabase.child("User").child(firstName).setValue(user);
-
-                //saveData();
-
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(signUp.this, "Account created.", Toast.LENGTH_SHORT).show();
                                     String userId = mAuth.getCurrentUser().getUid();
-                                    mDatabase.child("User").child(userId).setValue(user)
-                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                public void onComplete(@NonNull Task<Void> task) {
-                                                    if (task.isSuccessful()) {
-                                                        Toast.makeText(signUp.this, "User data saved.", Toast.LENGTH_SHORT).show();
-                                                        Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
-                                                        startActivity(intent);
-                                                        finish();
-                                                    } else {
-                                                        Toast.makeText(signUp.this, "Failed to save user data.", Toast.LENGTH_SHORT).show();
-                                                    }
-                                                }
-                                            });
+                                    addUserToFirestore(userId, firstName, lastName, email, phoneNumber, imageURL);
                                 } else {
                                     Toast.makeText(signUp.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
             }
-            });
+        });
+    }
+
+        private void addUserToFirestore(String userId, String firstName, String lastName, String email, String phoneNumber, String imageURL) {
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+            Map<String, Object> user = new HashMap<>();
+            user.put("firstName", firstName);
+            user.put("lastName", lastName);
+            user.put("email", email);
+            user.put("phoneNumber", phoneNumber);
+            user.put("imageURL", imageURL);
+
+            db.collection("users").document(userId)
+                    .set(user)
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(signUp.this, "Account Created Successfully.", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), mainMenuLoggedIn.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(signUp.this, "Failed to create account.", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
 //        buttonSignup.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -202,8 +215,6 @@ public class signUp extends AppCompatActivity {
 //                        });
 //            }
 //        });
-
-    }
 
     public void saveData(){
 //        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Android Images")

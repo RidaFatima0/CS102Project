@@ -136,4 +136,11 @@ public class mainMenuSearched extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), mainMenu.class);
+        startActivity(intent);
+        finish();
+    }
 }
