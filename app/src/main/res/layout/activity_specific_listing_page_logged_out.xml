@@ -194,15 +194,6 @@
                 android:layout_height="1dp" />
 
 
-
-            <ImageView android:id="@+id/line_5"
-                android:src="@drawable/line_5"
-                android:contentDescription="line_5"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="614dp"
-                android:layout_width="360dp"
-                android:layout_height="1dp" />
-
             <ImageView android:id="@+id/line_4"
                 android:src="@drawable/line_4"
                 android:contentDescription="line_4"

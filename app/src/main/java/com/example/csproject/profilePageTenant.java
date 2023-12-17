@@ -53,7 +53,7 @@ public class profilePageTenant extends AppCompatActivity {
         listing1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), specificListingPage.class);
+                Intent intent = new Intent(getApplicationContext(), viewListing.class);
                 startActivity(intent);
                 finish();
             }

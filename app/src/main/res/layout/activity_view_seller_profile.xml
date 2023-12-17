@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="33dp"
-            android:text="Your Profile"
+            android:text="Seller Profile"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />

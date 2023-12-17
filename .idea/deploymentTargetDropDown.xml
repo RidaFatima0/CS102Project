@@ -2,19 +2,19 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="FilterLoggedIn">
-        <State />
-      </entry>
       <entry key="app">
         <State />
       </entry>
       <entry key="mainMenuLoggedIn">
         <State />
       </entry>
-      <entry key="specificListingPage">
+      <entry key="profilePageSeller">
         <State />
       </entry>
-      <entry key="specificListingPage2LoggedOut">
+      <entry key="specificListingPageLoggedOut">
+        <State />
+      </entry>
+      <entry key="viewSellerProfile">
         <State />
       </entry>
       <entry key="welcomeScreen">
