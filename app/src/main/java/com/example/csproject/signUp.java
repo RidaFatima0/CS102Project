@@ -13,6 +13,8 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,6 +30,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.annotations.Nullable;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -75,6 +78,8 @@ public class signUp extends AppCompatActivity {
         editPhoneNumber = findViewById(R.id.phoneNumbertextbox);
         editConfirmPassword = findViewById(R.id.confirmPasswordtextbox);
         uploadImage = findViewById(R.id.uploadimageButton);
+        editTextPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        editConfirmPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
             @Override
@@ -94,6 +99,7 @@ public class signUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent photoPicker = new Intent(Intent.ACTION_PICK);
+                photoPicker.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 photoPicker.setType("image/*");
                 activityResultLauncher.launch(photoPicker);
             }

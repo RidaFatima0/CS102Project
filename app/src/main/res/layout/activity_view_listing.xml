@@ -180,34 +180,31 @@
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
-            <TextView
-                android:id="@+id/descriptionTextList"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="540dp"
-                android:text="Description"
-                android:textSize="15dp"
-                android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="565dp"
-                android:text="Only our valued customer who will rent it will be able to understand how valuable this land actually is. However, since the agricultural infrastructure came to these lands, competition has become very intense here...See more.
-        "
-                android:textColor="#605D5D"/>
+                <TextView android:id="@+id/description"
+                    android:textSize="13sp"
+                    android:textColor="@color/_bg__navbar_ek1_color"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="543dp"
+                    android:layout_width="330.3dp"
+                    android:layout_height="65.3dp"
+                    android:text="@string/description__tenant_must_utilize_the_land_for_agriculture_purpose___see_more____string"
+                    />
 
             <ImageView android:id="@+id/line_5"
                 android:src="@drawable/line_5"
                 android:contentDescription="line_5"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="643dp"
+                android:layout_marginTop="590dp"
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
 
+            <RelativeLayout
+                android:layout_marginTop="-45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
@@ -260,6 +257,7 @@
                 android:layout_marginTop="750dp"
                 android:layout_width="360dp"
                 android:layout_height="1dp" />
+                </RelativeLayout>
             </RelativeLayout>
     </RelativeLayout>
         </ScrollView>

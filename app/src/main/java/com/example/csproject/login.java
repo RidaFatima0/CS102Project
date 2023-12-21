@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 
 public class login extends AppCompatActivity {
 
@@ -53,6 +56,9 @@ public class login extends AppCompatActivity {
         editTextEmail = findViewById(R.id.emailtextbox);
         editTextPassword = findViewById(R.id.passwordtextbox);
         buttonLogin = findViewById(R.id.loginpageloginbutton);
+
+        editTextPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
 
         applogo = findViewById(R.id.applogo);
         applogo.setOnClickListener(new View.OnClickListener() {

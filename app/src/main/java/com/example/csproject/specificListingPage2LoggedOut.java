@@ -25,7 +25,7 @@ public class specificListingPage2LoggedOut extends AppCompatActivity {
         setContentView(R.layout.activity_specific_listing_page2_logged_out);
 
         calculate = findViewById(R.id.calculate);
-        int rent = 16000;
+        int rent = 7500;
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

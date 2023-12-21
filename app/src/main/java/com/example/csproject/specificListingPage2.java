@@ -33,7 +33,7 @@ public class specificListingPage2 extends AppCompatActivity implements PopupMenu
         mAuth = FirebaseAuth.getInstance();
 
         calculate = findViewById(R.id.calculatebutton);
-        int rent = 16000;
+        int rent = 7500;
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

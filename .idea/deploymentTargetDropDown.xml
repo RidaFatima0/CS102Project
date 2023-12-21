@@ -5,19 +5,19 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="createNewListing">
+        <State />
+      </entry>
+      <entry key="editListing">
+        <State />
+      </entry>
       <entry key="mainMenuLoggedIn">
         <State />
       </entry>
-      <entry key="profilePageSeller">
+      <entry key="signUp">
         <State />
       </entry>
-      <entry key="specificListingPageLoggedOut">
-        <State />
-      </entry>
-      <entry key="viewSellerProfile">
-        <State />
-      </entry>
-      <entry key="welcomeScreen">
+      <entry key="viewListing">
         <State />
       </entry>
     </value>

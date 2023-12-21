@@ -8,11 +8,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class viewListing extends AppCompatActivity {
 
     ImageView displayimage, applogo;
     View radiobutton1, radiobutton2, radiobutton3, radiobutton4;
+    TextView description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +83,14 @@ public class viewListing extends AppCompatActivity {
                 radiobutton2.setBackgroundColor(Color.BLACK);
                 radiobutton3.setBackgroundColor(Color.BLACK);
                 displayimage.setImageResource(R.drawable.image4);
+            }
+        });
+
+        description = findViewById(R.id.description);
+        description.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                description.setText("Description: Tenant must utilize the land for agriculture purposes. This will ensure that the land is used properly.");
             }
         });
     }

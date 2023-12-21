@@ -291,10 +291,10 @@
             android:id="@+id/payRent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="85dp"
+            android:layout_marginStart="80dp"
             android:layout_marginTop="515dp"
             android:textSize="15dp"
-            android:text="Pay Rent"/>
+            android:text="View Rent"/>
     </RelativeLayout>
 
 
